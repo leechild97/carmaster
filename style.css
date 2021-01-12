@@ -356,6 +356,101 @@ body {
   background-color: rgba(49, 132, 155, 1);
 }
 
+.hyundai-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(117, 204, 84, 0.2);
+}
+
+.hyundai-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(117, 204, 84, 1);
+}
+
+.ssangyoung-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(49, 132, 155, 0.2);
+}
+
+.ssangyoung-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(49, 132, 155, 1);
+}
+
+.lexus-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+
+.lexus-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+
+.volks-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(251, 176, 59, 0.2);
+}
+
+.volks-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(251, 176, 59, 1);
+}
+
+.audi-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(195, 140, 102, 0.2);
+}
+
+.audi-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(195, 140, 102, 1);
+}
+
 .percent-text {
   font-size: 1rem;
   color: #333;
@@ -434,11 +529,11 @@ body {
     font-size: 1rem;
 }
 
-.kia-carbrand-title {
+.maserati-carbrand-title {
 	color: #e56995;
 }
 
-.kia-carbrand-celeb {
+.maserati-carbrand-celeb {
 	color: #e56995;
     font-size: 1rem;
 }
@@ -452,6 +547,50 @@ body {
     font-size: 1rem;
 }
 
+.chevrolet-carbrand-title {
+	color: #3ba363;
+}
+
+.chevrolet-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
+}
+
+.bmw-carbrand-title {
+	color: #548dd4;
+}
+
+.bmw-carbrand-celeb {
+	color: #548dd4;
+    font-size: 1rem;
+}
+
+.hyundai-carbrand-title {
+	color: #e56995;
+}
+
+.hyundai-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+.ssangyoung-carbrand-title {
+	color: #e56995;
+}
+
+.ssangyoung-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+.volks-carbrand-title {
+	color: #3ba363;
+}
+
+.volks-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
+}
 
 /* carbrand */
 input#gender {
