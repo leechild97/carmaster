@@ -1,122 +1,175 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-			crossorigin="anonymous"
-		/>
+<head>
+	<meta charset="UTP-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta property="og:image" content="img/jae.jpg" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	 crossorigin="anonymous">
+	<title>나의 차량얼굴은?</title>
+	<meta name="title" content="나의 차량얼굴은?">
+	<meta name="subject" content="얼굴로 보는 인공지능 차량브랜드 테스트, 나와 어울리는 차량 브랜드를 찾아 보세요!">
+	<meta name="keywords" content="나의차량 얼굴은?, 인공지능 자동차브랜드 테스트, 얼굴상, 자동차상, 자동차 얼굴 테스트, 나와 어울리는 자동차 브랜드, 자동차 브랜드 찾기, 얼굴로 보는 자동차, 얼굴 자동차, 자동차얼굴, carbrandface, 현대, 기아, 제네시스, 벤츠, bmw, 인공지능 자동차상, AI 얼굴상, AI 자동차상">
+	<meta name="author" content="signalbuild" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="canonical" href="https://idolfacetest.cf" />
+	<meta property="og:url" content="https://idolfacetest.cf" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="나의 차량얼굴은?" />
+	<meta property="og:discription" content="얼굴로 보는 인공지능 자동차상, 나와 어울리는 자동차 브랜드를 찾아 보세요! 각 회사의 차량의 사진 데이터로 학습한 인공지능이 나의 얼굴 사진으로 어울리는 소속사를 찾아 드립니다. 회원가입도 필요 없이 화면에서 바로 확인해 보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 차량 브랜드상 테스트를 한 번 해 보세요! 국내 브랜드와 해외 브랜드 사진을 선택해 나와 적절한 이미지를 찾아 보세요!"
+	/>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd452a2f4bc53e2">
 
-		<title>나의 차량 관상은?</title>
-		<link rel="stylesheet" href="style.css" />
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd452a2f4bc53e2"></script>
+	</script>
+</head>
 
-	</head>
-
-	<body>
-		<nav class="p-3 container navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">나의 차량관상은?</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-						<a class="nav-link" href="#">서비스 도움말</a>
-						<li id="goToBlog" class="nav-item active">
-                    <a class="nav-link" href="blog.html">
-                        블로그
-                    </a>
-                </li>
-						
-					</div>
-				</div>
+<body>
+	<nav class="p-3 container navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="https://idolfacetest.cf/">나의 차량얼굴은?</a>
+		<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+							>나의 차량 얼굴은?
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a
+							class="nav-link"
+							id="instagram"
+							href="https://instagram.com/signal_build?r=nametag"
+							>시그널빌드 instargram</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
-        <section class="section">
-        	<h1 class="title">나의 차량관상은?</h1>
-			<h2 class="subtitle">나와 닮은 자동차 브랜드의 관상은?</h2>
-        </section>
-		<section class="youtube">
-			<div class="container mt-5 youtube-cover d-flex flex-row-reverse">
-				<img src="img/youtube_icon-icons.com_62716.ico" alt="" class="youtube-icon">
-				<a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">도움주신 조코딩 유튜브 채널</a>
+		<section class="section">
+			<h1 class="title">나의 차량얼굴은?</h1>
+			<h2 class="subtitle">얼굴로 보는 나와맞는 자동차 브랜드는?</h2>
+			<h2 class="sr-only">나는 어느 차브랜드에 어울릴까?</h2>
+			<h3 class="sr-only">
+				각 브랜드의 자동차 이미지를 데이터로 학습한 인공지능이 나의 이미지로 차량 브랜드를
+				찾아드립니다!
+			</h3>
+			<h4 class="sr-only">
+				본 서비스는 Google의 인공지능 teachable machine을 활용하였습니다.
+			</h4>
+			<p class="sr-only">
+				얼굴로 보는 인공지능 자동차상, 나와 어울리는 자동차 브랜드를 찾아 보세요! 각 회사의 차량의 사진 데이터로 학습한 인공지능이 나의 얼굴 사진으로 어울리는 소속사를 찾아 드립니다. 회원가입도 필요 없이 화면에서 바로 확인해 보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 차량 브랜드상 테스트를 한 번 해 보세요! 국내 브랜드와 해외 브랜드 사진을 선택해 나와 적절한 이미지를 찾아 보세요!
+			</p>
+		</section>
+		<section class="youtube pb-3" id="youtube-mid-link">
+			<div class="container mt-5 youtube-cover d-flex flex-row-reverse align-items-center">
+				<img src="img/youtube_icon-icons.com_62716.ico" alt="youtube-icon" class="youtube-icon" />
+				<a
+					href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
+					class="youtube-link"
+					>조코딩님 유튜브 채널!</a
+				>
 			</div>
 		</section>
+		<h3 class="pb-2 d-flex justify-content-center">브랜드를 선택하세요</h3>
+		<section class="d-flex justify-content-center">
+			<p class="d-flex align-items-center pr-3">슈퍼(하이퍼카)</p>
+			<div>
+				<input type="checkbox" id="gender" />
+				<label for="gender">
+					<span class="knob">
+						<i></i>
+					</span>
+				</label>
+			</div>
+			<p class="d-flex align-items-center pl-3">국산(인기외제6종)</p>
+		</section>
 		<script
-			class="jsbin"src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			class="jsbin"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+		></script>
 		<div class="mt-3 container file-upload">
 			<div class="image-upload-wrap">
-				<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*"/>
+				<input
+					class="file-upload-input"
+					type="file"
+					onchange="readURL(this);"
+					accept="image/*"
+				/>
 				<div class="drag-text">
-					<img src="img/upload.svg" class="mt-5 pt-5 upload">
-					<h3 class="mb-5 pb-4 pt-4 upload-text">이미지를 첨부해 주세요!</h3>
-					<div class="noti">*사용자의 이미지는 어디에도 저장되지 않습니다.*</div>
+					<h3 class="mt-5 pb-4 pt-4 upload-text">
+						이곳을 눌러 얼굴 사진을 업로드하세요!
+					</h3>
+          <div class="noti">*사용자의 이미지는 어디에도 저장되지 않습니다.*</div>
 				</div>
 			</div>
-			 <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only"></span>
-                </div>
-                <p class="text-center">AI가 당신의 이미지로 브랜드를 분석중입니다.</p>
-            </div>
-            <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-            <div id="addhis" class="addthis_inline_share_toolbox"></div>
+			<div class="file-upload-content">
+				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<div id="loading" class="animated bounce">
+					<div class="spinner-border" role="status">
+						<span class="sr-only">Loading...</span>
+					</div>
+					<p class="text-center">이미지를 어울리는 브랜드로 분석중입니다.</p>
+				</div>
+				<p class="result-message"></p>
+				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
+				<div id="addThis" class="addthis_inline_share_toolbox_tylc"></div>
+				<div id="addhis" class="addthis_inline_share_toolbox"></div>
 
-            <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="window.location.reload()">
-                    <span class="try-again-text">다른 사진으로 재시도</span>
-                </button>
+				<div class="pt-3 image-title-wrap">
+					<button
+						type="button p-2"
+						class="try-again-btn"
+						onclick="window.location.reload();"
+					>
+						<span class="try-again-text">다른 사진으로 재시도</span>
+					</button>
 				</div>
 			</div>
 		</div>
 		
+		
+
+			
+
+		
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		
 		<footer class="footer pt-5 container d-flex justify-content-center">
-        <div>
-            <p>&copy; 시그널빌드 signalbuild 2020. All Rights Reserved. </p>
-        </div>
-		<div class="contact">
-    <a href="qjfskql7@gmail.com" class="contact_me">개발자 문의</a>
-    <a href="qjfskql7@gmail.com" class="contact_me">광고 문의</a>
-  </div>	
-    </footer>
+			<div>
+				<p>&copy; 시그널빌드 signalbuild 2021. All Rights Reserved.</p>
+			</div>
+		</footer>
 		<script>
-		 function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('.image-upload-wrap').hide();
-                    $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-                    $('.image-title').html(input.files[0].name);
-                };
-                reader.readAsDataURL(input.files[0]);
-                init().then(function() {
-                    console.log("hello");
-                    predict();
-                    $('#loading').hide();
-                });
-                   
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+						$('#loading').show();
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+						$('.image-title').html(input.files[0].name);
+					};
+					reader.readAsDataURL(input.files[0]);
+					init().then(function () {
+						console.log('hello');
+						predict();
+						$('#loading').hide();
+					});
 				} else {
 					removeUpload();
 				}
@@ -135,168 +188,329 @@
 			});
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 		<script type="text/javascript">
-		    let URL;
-			const URL = 'https://teachablemachine.withgoogle.com/models/ufx6zTsLV/';
-            let model, webcam, labelContainer, maxPredictions;
+			let URL;
+			const urlMale = 'https://teachablemachine.withgoogle.com/models/ufx6zTsLV/';
+			const urlFemale = 'https://teachablemachine.withgoogle.com/models/rKAK4WH3T/';
+			let model, webcam, labelContainer, maxPredictions;
 			async function init() {
+				if (document.getElementById('gender').checked) {
+					URL = urlMale;
+				} else {
+					URL = urlFemale;
+				}
 				const modelURL = URL + 'model.json';
 				const metadataURL = URL + 'metadata.json';
-
-				// load the model and metadata
-				// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
-				// or files from your local hard drive
-				// Note: the pose library adds "tmImage" object to your window (window.tmImage)
 				model = await tmImage.load(modelURL, metadataURL);
 				maxPredictions = model.getTotalClasses();
 				labelContainer = document.getElementById('label-container');
 				for (let i = 0; i < maxPredictions; i++) {
-					// and class labels
-					var element = document.createElement("div")
-					labelContainer.appendChild(document.createElement('div'));
-					element.classList.add("d-flex");
-                labelContainer.appendChild(element);
+					var element = document.createElement('div');
+					element.classList.add('d-flex');
+					labelContainer.appendChild(element);
 				}
 			}
-
-			
 			async function predict() {
 				var image = document.getElementById('face-image');
 				const prediction = await model.predict(image, false);
-				 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-				console.log(prediction[0].classname)
-				var resultTitle,resultExplain;
-				switch (prediction[0].className) {
-                    case "rand rover":
-                        resultTitle = "듬직한 남자친구상 랜드로버"
-						resultExplain =""
-                        break;
+				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				console.log(prediction[0].className);
+				var resultTitle, resultExplain, resultCeleb;
+				if (document.getElementById('gender').checked) {
+					switch (prediction[0].className) {
 						
-					case "genesis":
-                       resultTitle = "오빠 느낌으로 변신한 제네시스"
-					   resultExplain =""
-                        break;
-						
-					case "mini":
-                        resultTitle = "호기심과 모험심이 많은 미니"   
-						resultExplain =""
-						break;
-						
-					case "hyundai":
-                        resultTitle = "티키타카가의 느낌 현대"        
-						resultExplain =""
-						break;
-						
-					case "chevrolet":
-                        resultTitle = "허당끼가 가끔있는 쉐보레"              
-						resultExplain =""
-						break;
-						
-					case "maserati":
-                        resultTitle = "귀티와 완벽을 보여주는 마세라티"  
-						resultExplain =""
-						break;
-						
-					case "kia":
-                        resultTitle = "쌍둥이형제 같은 기아"          
-						resultExplain =""
-						break;
-						
-					case "ssangyoung":
-                        resultTitle = "고난이 많이 있던 자수성가상의 싸용"                
-						resultExplain =""
-						break;
-						
-					case "lexus":
-                        resultTitle = "깐깐한 부장님 같은 이미지 렉서스"              
-						resultExplain =""
-						break;
-						
-					case "bmw":
-                        resultTitle = "3대500을 치는 동네헬창 bmw"               
-						resultExplain =""
-						break;
-						
-					case "volks":
-                       resultTitle = "불금을 태우는 폭스바겐"   
-						resultExplain =""
-						break;
-						
-					case "audi":
-                        resultTitle = "스마트하고 젠틀한 영앤리치 느낌의 아우디"
-						resultExplain =""
-						break;
-						
+						case 'rand rover':
+							resultTitle = '듬직한 남자친구느낌 랜드로버'
+							resultExplain =
+								'정숙성과 편안함을 보여주면서 고급지다는 느낌을 한번에 잡은 suv를 주로 생산하는 회사이며 넓은 공간도 보여주고 있는 자동차 회사이며 인기가 많은 외제suv브랜드중 하나라고 볼수 있다 최상의 트림 레인지로버는 사막의 롤스로이스라는 표현도 있으며 정숙성과 내장제 넓은 공간을 생각한다면 한번쯤 고려해보는것도 괜찮을것같다.'
+							resultCeleb = '대표차종:레인지로버&스포츠 벨라,이보크,디펜더,디스커버리'
+							break;
+						case 'genesis':
+							resultTitle = '오빠 느낌으로 변신한 제네시스'
+							resultExplain =
+								'국내 플레그십 브랜드이며 대표님들의 차량으로 많이 이미지를 보여줬지만 최근에 페이스리프트와 새로운 라인업이 등장하면서 디자인이 많이 바뀌면서 오빠층에서 인기가 많아진 브랜드라고 볼수가 있으며 현대의 브랜드 답게 많은 옵션의 기능과 고급스러움을 보여주면서 소비자의 마음을 겨냥하고 있는 브랜드라고 볼수있다.'
+							resultCeleb = '대표차량:g70,g80,g90,gv70,gv80'
+							break;
+						case 'mini':
+							resultTitle = '호기심과 모험심이 많은 미니'
+							resultExplain =
+								'bmw산하에 있는 브랜드로 20~40대 여성에게 가장 인기가 있는 외제 브랜드라고 할수 있으며 실용성 있는 크기와 귀여운 디자인으로 인기가 많은 브랜드라고 할수가 있을거같다 3도어에 차량이 주로 많이 팔리다가 요 근래에는 5도어 차량들도 많이 나오고 있으며 현재도 인기가 많이 있다'
+							resultCeleb = '미니쿠퍼,쿠페,컨버터블,컨트리맨'
+							break;
+						case 'hyundai':
+							resultTitle = '친근한 친형상 현대'
+							resultExplain =
+								'국내에서 가장 많이 굴러다니고 있는 브랜드중 한가지로 풍부한옵션 디자인으로 나오고 있기때문에 가장 많이 찾는 브랜드라고 할수가 있다 다양한 가격대에서 나에게 맞는 차량을 찾을수가 있으며 서비스센터도 많이 있어서 정비도 어려운 편은 아니어서 그래도 사람들이 가장 많이 찾는 브랜드라고 할수 있다라고 말할수가 있을것 같다. '
+							resultCeleb = '대표차량:소나타,그랜저,산타페,펠리세이드,벨로스터n'
+							break;
+						case 'kia':
+							resultTitle = '현실같은 동생상 기아'
+							resultExplain ='최근들어서 무난한 디자인과 많은 옵션 덕분에 소비자에게 인기가 많으며 카니발이 새로운 모델로 커진 공간과 직관적인 장치조작&화면 덕분에 아이 아빠들 사이에서 꾸준히 사랑 받고 있다 또한 하이브리드부터 suv 고성능세단까지 있기 때문에 소비자의 선택폭이 넓어졌다고 할수가 있다. '
+							resultCeleb = '대표차량:k시리즈 세단,쏘렌토 모하비,니로,스토닉,스팅어'
+							break;
+            case 'ssangyoung':
+							resultTitle = '성형수술이 잘된 쌍용'
+							resultExplain ='국내에서 suv를 생산을 주로 했었던 회사로 대형세단인 체어맨이 있었지만 단종이 되고나서 소형suv시장에서 티볼리를 찾는 비율이 올라가면서 인기가 많았고 렉스턴 같은경우에는 대형 suv로 넓은 공간과 프레임바디로 견인에는 특화되어있으며 장거리 이동시에 편한점을 어필하며 예전과는 다르게 안전장치와 추가된 엔터테이먼트 덕분에 집중이 될수가 있었던 브랜드이다.'
+							resultCeleb = '대표차량:렉스턴,티볼리,코란도'
+							break;
+            case 'lexus':
+							resultTitle = '젠틀하지만 깐깐한 부장님 느낌 렉서스'
+							resultExplain =
+								'국내에서는 제네시스 브랜드가 있듯이 일본에서는 렉서스라는 브랜드가 있는데 하이브리드 차량이 인기가 많은 브랜드중 하나라고 볼수가 있을것같다 세단인 es시리즈가 주력차종이고 suv로 ux,nx,rx등 인기가 많은 브랜드이라고 할수가 있다 실내에서도 고급스러운 재질 사용과 깔끔한 디자인 덕에 사람들이 관심있어하는 차량 브랜드라고 할수가 있다'
+							resultCeleb = '대표차량:렉서스es시리즈,rx시리즈,ls시리즈,ux시리즈,nx시리즈,lc시리즈'
+							break;
+            case 'bmw':
+							resultTitle = '동네헬창 느낌의 bmw'
+							resultExplain =
+								'스포티한 주행느낌과 주행즐거움 때문에 인기가 많은 독일3사의 브랜드중 하나고 특이의 또 다른 마크라고 할수 있는 돼지콧구멍과 g시리즈로 넘어가면서 눈에띄게 달라진 내부 디자인과 기능들 넓어진 공간덕에 사랑을 많이 받고 있는 브랜드라고 말할수 있다'
+							resultCeleb = '1시리즈~8시리즈,x시리즈,m시리즈'
+							break;
+            case 'volks':
+							resultTitle = '밀당 고수의 폭스바겐'
+							resultExplain =
+								'최근들어서 각지고 날렵한 디자인으로 많이 출시가 되고있는 폭스바겐이라고 할수가 있다 과거의 협소한 차량 공간과 특이한 단단한 셋팅으로 승차감 호불호가 많이 갈리는 브랜드라고 할수가 있다 최근리뉴얼된 차량은 최신차량답게 안전기능,풍부한 옵션 넓어진 차량의 공간으로 소비자들이 고민해보는 차량 브랜드라고 할수있다. '
+							resultCeleb = '대표차량:티구안,투아렉,제타,cc,파사트,아테온'
+							break;
+            case 'audi':
+							resultTitle = '얼리어답터형 느낌의 아우디'
+							resultExplain =
+								'얼리어답터의 느낌이 있다.깔끔하고 심플하지만 화려하면서도 스마트한 면을 보유하고 있는 엄친아의 느낌이라고 설명을 할수가 있을것같다. 그로인해서 주위에서 많이 찾는 사람이기 때문에 피곤할수도 있을것같다.'
+							resultCeleb = '아우디a시리즈,q시리즈,r시리즈,s시리즈,rs시리즈sq시리즈'
+							break;
+            case 'chevrolet':
+							resultTitle = '황금색 교회오빠 쉐보레'
+							resultExplain =
+								'무난한 브랜드라고 할수가 있다 말리부 같은경우 중형세단에서 동급대 높은 출력과 무난한 디자인으로 인기가 많이 있고 최근들어 대형suv와 픽업트럭도 선보이면서 패밀리 차량 또는 픽업트럭을 고민하는 소비자들이 눈여겨 보고있는 브랜드이다.'
+							resultCeleb = '대표차량:스파크,트랙스,말리부,이퀴녹스,트레일블레이저,카마로,콜로라도,트래버스'
+							break;
+            case 'maserati':
+							resultTitle = '까칠한 느낌의 마세라티'
+							resultExplain =
+								'페라리 산하 브랜드의 마세라티는 공격적이게 생긴 날렵한 디자인과 배기음 덕분에 다양한 연령대에서 인기와 사랑을 많이 받고있는 이탈리아산 브랜드라고 말할수가 있을것같다 과거에는 세단&쿠페 찰량이 많이 생산되었지만 근래의 마세라티는 suv도 출시가 되면서 관심이 쏠렸으며 현재까지도 인기가 많이있는 차량 브랜드라고 할수가 있다.'
+							resultCeleb = '대표차량:기블리,콰트로포르테,그란투리스모(카브리오),르반떼'
+							break;
+			case 'benz':
+							resultTitle = '신사의 표본 벤츠'
+							resultExplain =
+								'예전 삼각별 마크의 표시는 부에 상징을 나타내면서 똥차가고 벤츠 온다는 속설이 존재할 만큼 벤츠에 대한 브랜드는 시중에서 호평의 이미지가 크다는 점을 알수가 있고 늘 최신기술과 세련된 외관 디자인 및 외부디자인으로 남녀노소 누구나 다 좋아하는 차량이라고 할수가 있고 고가의 차량 마이바흐와 고성능 버전인 amg또한 가지고 있어서 선택의 폭이 정말 다양한 브랜드라고 할수가 있다 '
+							resultCeleb = '인기차량:E클래스,S클래스,g클래스,gle클래스GLC클래스,A클래스'
+							break;
+			case 'cadillac':
+							resultTitle = '미국산 방패 캐딜락'
+							resultExplain =
+								'대표적인 미국 차종중에 한곳인 브랜드로 특유의 방패마크가 특징적이며 대형세단부터 시작해서 suv까지 다양한 시리즈를 가지고 있는 차량 브랜드이며 다양한 매력을 포인트를 가지고 있기 때문에 선택의 폭은 높지만 국내에서는 여러가지 서비스와 연비 등에 인기는 많지 않고 캐딜락에 에스컬레이드 같은경우 신형 모델이 출시가 되면서 더 커져서 눈길을 끌고 있는 제품이다. '
+							resultCeleb = '인기차량:E클래스,S클래스,g클래스,gle클래스GLC클래스,A클래스'
+							break;
 						default:
-                        resultTitle = "알수없음"
-						resultExplain = ""
-                    
+							resultTitle = '알 수 없음'
+							resultExplain = ''
+							resultCeleb = ''
+					}
+				} else {
+					switch (prediction[0].className) {
+						case 'lamboreghni':
+							resultTitle = '강한 퍼포먼스와 인상 람보르기니'
+							resultExplain =
+								'외관의 화려한 퍼포먼스 디자인 강력한 배기음 덕분에 시선과 사랑을 많이 받고 있는 모델중 이탈리아산 슈퍼카 브랜드중 하나라고 말할수가 있을것 같다.성나있는 황소의 모습을 연상시키는 디자인과 주행능력이 있으며 페라리와는 다른 성향을 지니고 있는 자동차 브랜드라고 볼수가 있다 화려한 퍼포먼스를 좋아한다면 람보르기니상에 가깝다고 말할수가 있다'
+							resultCeleb = '대표차량:아벤타도르,우라칸,우루스'
+							break;
+						case 'ferrari':
+							resultTitle = '성난 적토마 페라리'
+							resultExplain =
+								'람보르기니의 경쟁회사 답게 빠르고,편안한 승차감도 추구하고 있는 브랜드 라고 볼수가 있다 20대층 보다는 30대층부터 인기가 많이 있고 역시나 강렬한 인상을 보여주는것은 람보르기니처럼 마찬가지이지만 다른 매력을 또 가지고 있다 딱딱한 느낌이 아닌 그나마 좀 편한 승차감도 추구 한다면 페라리 오너상에 가깝다라고 할수가 있을것 같다.'
+							resultCeleb = '대표차량:458이탈리아,488,812슈퍼패스트,f8'
+							break;
+						case 'pagani':
+							resultTitle = '터미네이터 느낌의 파가니'
+							resultExplain =
+								'강렬한 인상과 쉽게 볼수 없을뿐더러 기계적 느낌의 내부 디자인과 오픈되는 형식 강렬하게 생긴 레이스카 느낌이 물씬나는 차량 이라고 할수가 있을거같다.실물로 접하면 압도적이기 때문에 말이 필요 없다라고 할수있고 파가니 오너에 가까운 상이라고 볼수가 있다.'
+							resultCeleb = '대표차량:와이라 시리즈,존다 시리즈'
+							break;
+						case 'mclaren':
+							resultTitle = '고급스러운 영국 갈매기 맥라렌'
+							resultExplain =
+								'과거 몇년전만해도 보기 어렵고 인지도도 많이 알려져 있던 브랜드가 아니었기 때문에 잘 알려지지 않았지만 시선을 사로잡는 배기음과 디자인 퍼포먼스 덕분에 인기가 많아진 영국에 슈퍼카 브랜드라고 말할수가 있을것 같다.도어가 위로 열리며 멋짐이 폭발하였고 젊은남녀들도 많이 알고있고 사랑 받는 브랜드이며 맥라렌 오너상이라고 말할수가 있을것같다.'
+							resultCeleb = '대표차량:570s,650s,720s,p1'
+							break;
+						case 'astonmartin':
+							resultTitle = '극비 임무요원 에스턴마틴'
+							resultExplain =
+								'영화007에서 제임스본드카로 알려져서 유명해졌고 고급스러운 크리스탈 키의 가격으로 유명했던 차량이라고 말할수가 있을것같다 중후한 배기음으로 무난하지만 국내에서는 선호도가 높지는 않은 편이라고 말할수가 있을것같다. 현재에는 출시되고 있는 db11같은경우 벤츠 AMG엔진을 기반으로 개조해서 사용중인것으로 알려져 있고 또 영국 슈퍼카만의 느낌이 담겨 있는 브랜드라고 할수 있고 에스턴마틴 오너상에 가깝다고 볼수가 있다.'
+							resultCeleb = '대표차량:뱅퀴시,db시리즈,밴티지,dbx'
+							break;
+						case 'bugatti':
+							resultTitle = '원조 석유국 왕자 느낌 부가티'
+							resultExplain =
+								'초창기 하이퍼카에 대한 느낌이 많이 없을떄도 국내에서도 운행이 몇번 된적 있어서 자동차를 좋아하는 사람들의 이슈가 되고 가격에서도 이슈가 되었기 때문에 유명한 차량이라고 말할수가 있을것같다.디자인과 초기 세상에서 가짱 빠른 차량 브랜드의 타이틀도 가지고 있었고 지금 또한 한번에 이목을 집중 시킬수 있는 말이 안나오는 브랜드로 부가티에 잘 어울리는 상이라고 말할수가 있을것같다.'
+							resultCeleb = '대표차량:부가티 베이론 시리즈,시론 시리즈,디보,lv1'
+							break;
+							resultCeleb = '대표차량:와이라 시리즈,존다 시리즈'
+						case 'poreche':
+							resultTitle = '귀여운 생겼지만 전혀아닌 개구리 포르쉐'
+							resultExplain =
+								'포르쉐는 독일에 슈퍼카 제조 기업으로 둥근 눈이 매력이고 개구리같은 디자인에 대중에서도 인기가 많은 브랜드라고 할수가 있다 최근에는 고성능 suv도 같이 생산을 하면서 대중에 선택에 폭이 넓어졌고 인터페이스도 최신의 기술이 들어가 있기 때문에 더욱 많은 수요층이 늘어났다 또한 사후 보증도 좋기 때문에 고객수요가 늘어나고 있는 브랜드로 포르쉐에 맞는 오너상에 가깝다라고 할수가 있다.'
+							break;
+							resultCeleb = '대표차량:718시리즈,카이맨 시리즈,911,992,카이엔,마칸,파나메라 시리즈'
+						case 'koenigsegg':
+							resultTitle = '하이퍼카 대표 브랜드 코닉세그'
+							resultExplain =
+								'코닉세그 라고 하면 차를 좋아하지 않는 이상 잘 모르는 브랜드라고 할수가 있고 생소한 브랜드라고 할수가 있다 감히 쉽게 범접할수 없는 자동차 브랜드로 파가니,부가티와 마찬가지로 높은 가격대를 가지고 있고 화려한 디자인을 가지고 있으며 최신의 기술력과 100m 떨어져서 가고 싶은 욕구를 보여주는 브랜드라고 할수가 있는는 브랜드이고 특유에 방패마크가 인상적이며 코닉세그에 잘 맞는 오너상이라고 할수있을것 같다.'
+							break;
+							resultCeleb = '대표차량:제메라,아제라,예스코'
+						default:
+							resultTitle = '알 수 없음'
+							resultExplain = ''
+							resultCeleb = ''
+					}
 				}
-				
-			var title = "<div class='" + prediction[0].className + "-car-title'>" + resultTitle + "</div>"
-            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"	
-			$('.result-message').html(title + explain);
-            var barWidth;
-            for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else  (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
+				var title =
+					"<div class='" +
+					prediction[0].className +
+					"-carbrand-title'>" +
+					resultTitle +
+					'</div>'
+				var explain = "<div class='carbrand-explain pt-2'>" + resultExplain + '</div>'
+				var celeb =
+					"<div class='" +
+					prediction[0].className +
+					"-carbrand-celeb pt-2 pb-2'>" +
+					resultCeleb +
+					'</div>'
+				$('.result-message').html(title + explain + celeb);
+				var barWidth;
+				for (let i = 0; i < maxPredictions; i++) {
+					if (prediction[i].probability.toFixed(2) > 0.1) {
+						barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+					} else if (prediction[i].probability.toFixed(2) >= 0.01) {
+						barWidth = '4%';
+					} else {
+						barWidth = '2%';
+					}
+					var labelTitle;
+					switch (prediction[i].className) {
+						case 'kia':
+							labelTitle = '기아'
+							break;
+						case 'rand rover':
+							labelTitle = '랜드로버'
+							break;
+						case 'genesis':
+							labelTitle = '제네시스'
+							break;
+						case 'lexus':
+							labelTitle = '렉서스'
+							break;
+						case 'benz':
+							labelTitle = '벤츠'
+							break;
+						case 'mini':
+							labelTitle = '미니'
+							break;
+						case 'audi':
+							labelTitle = '아우디'
+							break;
+						case 'hyundia':
+							labelTitle = '현대'
+							break;
+						case 'chevrolet':
+							labelTitle = '쉐보레'
+							break;
+						case 'cadillac':
+							labelTitle = '캐딜락'
+							break;
+						case 'maserati':
+							labelTitle = '마세라티'
+							break;
+						case 'bmw':
+							labelTitle = 'BMW'
+							break;
+						case 'ssangyoung':
+							labelTitle = '쌍용'
+							break;
+						case 'volks':
+							labelTitle = '폭스바겐'
+							break
+						case 'lamboreghni':
+							labelTitle = '람보르기니'
+							break;
+						case 'mclaren':
+							labelTitle = '맥라렌'
+							break;
+						case 'ferrari':
+							labelTitle = '페라리'
+							break;
+						case 'poreche':
+							labelTitle = '포르쉐'
+							break;
+						case 'bugatti':
+							labelTitle = '부가티'
+							break;
+						case 'Koenigsegg':
+							labelTitle = '코닉세그'
+							break;
+						case 'pagani':
+							labelTitle = '파가니'
+							break;
+						case 'astonmartin':
+							labelTitle = '에스턴마틴'
+							break;
+						default:
+							labelTitle = '알 수 없음'
+					}
+					var label =
+						"<div class='carbrand-label d-flex align-items-center'>" +
+						labelTitle +
+						'</div>'
+					var bar =
+						"<div class='bar-container position-relative container'><div class='" +
+						prediction[i].className +
+						"-box'></div><div class='d-flex justify-content-center align-items-center" +
+						prediction[i].className +
+						"-bar' style='width: " +
+						barWidth +
+						"'><span class='d-block percent-text'>" +
+						Math.round(prediction[i].probability.toFixed(2) * 100) +
+						'%</span></div></div>';
+					
+					labelContainer.childNodes[i].innerHTML = label + bar;
 				}
-                var labelTitle;
-                switch (prediction[i].className) {
-                    case "rand rover":
-                        labelTitle = "랜드로버상"
-                        break;
-                    case "genesis":
-                        labelTitle = "제네시스상"
-                        break;
-                    case "mini":
-                        labelTitle = "mini상"
-                        break;
-                    case "hyundai":
-                        labelTitle = "현대상"
-                        break;
-                    case "chevrolet":
-                        labelTitle = "쉐보레상"
-                        break;
-                    case "maserati":
-                        labelTitle = "마세라티상"
-                        break;
-                    case "kia":
-                        labelTitle = "기아자동차상"
-                        break;
-					case "ssangyoung":
-                        labelTitle = "싸용자동차상"
-                        break;
-					case "lexus":
-                        labelTitle = "렉서스"
-                        break;
-					case "bmw":
-                        labelTitle = "BMW상"
-                        break;
-					case "volks":
-                        labelTitle = "폭스바겐상"
-                        break;
-					case "audi":
-                        labelTitle = "아우디상"
-                        break;
-                    default:
-                        labelTitle = "알수없음"
-                }
-                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
-        }
-			</script>
-	
-// <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+			}
+		</script>
+		<script>
+			function iosApp() {
+				document.getElementById('coupang').style.display = 'none';
+				$('#coupang ins').hide();
+				document.getElementById('addThis').style.display = 'none';
+				document.getElementById('disqus_thread').style.display = 'none';
+				var kakao = document.getElementsByClassName('kakao_ad_area');
+				for (var i = 0; i < kakao.length; i++) {
+					if (kakao[i]) {
+						kakao[i].style.display='none'
+					}
+				}
+			document.getElementById('instagram').style.display = 'none';
+				document.getElementById('yotube-mid-link').style.display = 'none';
+			}
+		</script>
+	</body>
+	<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
-// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//  -->
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+</html>

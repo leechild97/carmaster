@@ -4,13 +4,15 @@ body {
   box-sizing: border-box;
   color: #35465d;
 }
+
 .file-upload {
-    padding: 15% 3%;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: solid 1.5px #f6f7fa;
-    background-color: #f6f7fa;
+  padding: 15% 3%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 1.5px #f6f7fa;
+  background-color: #f6f7fa;
 }
+
 .file-upload-btn {
   width: 100%;
   margin: 0;
@@ -42,13 +44,14 @@ body {
   display: none;
   text-align: center;
 }
+
 #loading {
   display: none;
 }
 
 .file-upload-input {
   position: absolute;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -58,19 +61,20 @@ body {
 }
 
 .image-upload-wrap {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-    object-fit: contain;
-    border-radius: 10px;
-    border: dashed 1.5px #35465d;
-    background-color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  object-fit: contain;
+  border-radius: 10px;
+  border: dashed 1.5px #35465d;
+  background-color: #ffffff;
+  
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: #35465d82;
-    border: 1.5px dashed #ffffff;
+  background-color: #35465d82;
+  border: 1.5px dashed #ffffff;
 }
 
 .image-title-wrap {
@@ -123,19 +127,19 @@ body {
 .navbar-light .navbar-brand {
   line-height: 1.68;
   text-align: left;
-  color: #35465d; 
+  color: #35465d;
 }
 
 .navbar-light .navbar-toggler {
-    border-color: #ffffff;
+	border-color: #ffffff;
 }
 
 .section {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 
 .title {
-  line-height: 1.67;
+  line-height: 1.57;
   text-align: center;
   color: #35465d;
 }
@@ -148,58 +152,58 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 10px;
+	html {
+    font-size: 10px; 
   }
-    .navbar-brand {
-        font-size: 2rem;
-    }
+	.navbar-brand {
+		font-size: 2rem;
+	}
 }
 
-
 .youtube-link {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
+  font-size: 1rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
 }
 
 .youtube-link:hover {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
+  font-size: 1rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
 }
 
 .youtube-icon {
-    width: 30px;
-    height: 27.262px;
+  width: 30px;
+  height: 27.262px;
 }
 
 .upload {
-    width: 20%;
+  width: 20%;
 }
 
 .upload-text {
-    width: 58%;
-    font-size: 1.5rem;
-    line-height: 1.53;
-    text-align: center;
-    color: #35465d;
-    margin: 0 auto;
+  width: 58%;
+  font-size: 1.5rem;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+  margin: 0 auto;
 }
 
 .footer {
-    background-color: initial;
-    color: initial;
+  background-color: initial;
+  color: initial;
 }
 
 .bar-container {
   height: 2.7rem;
 }
-.dinosaur-box {
+
+.randrover-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -208,7 +212,8 @@ body {
   width: 100%;
   background-color: rgba(117, 204, 84, 0.2);
 }
-.dinosaur-bar {
+
+.randrover-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -216,75 +221,8 @@ body {
   border-radius: 10px;
   background-color: rgba(117, 204, 84, 1);
 }
-.deer-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
-}
-.deer-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
-}
-.dog-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
-}
-.dog-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
-}
-.cat-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
-}
-.cat-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
-}
-.bear-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
-}
-.bear-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
-}
-.fox-box {
+
+.maserati-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -293,7 +231,8 @@ body {
   width: 100%;
   background-color: rgba(49, 132, 155, 0.2);
 }
-.fox-bar {
+
+.maserati-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -301,106 +240,284 @@ body {
   border-radius: 10px;
   background-color: rgba(49, 132, 155, 1);
 }
-.rabbit-box {
+
+.mini-box {
   position: absolute;
   top: 0;
   left: 0;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: rgba(27, 175, 234, 0.2);
 }
-.rabbit-bar {
+
+.mini-bar {
   position: absolute;
   top: 0;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: rgba(27, 175, 234, 1);
 }
+
+.chevrolet-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(251, 176, 59, 0.2);
+}
+
+.chevrolet-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(251, 176, 59, 1);
+}
+
+.kia-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(195, 140, 102, 0.2);
+}
+
+.kia-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(195, 140, 102, 1);
+}
+
+
+.genesis-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(253, 203, 1, 0.2);
+}
+
+.genesis-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(195, 140, 102, 1);
+}
+
+.bmw-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(195, 140, 102, 0.2);
+}
+
+.bmw-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(187, 140, 102, 1);
+}
+
+.benz-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(49, 132, 155, 0.2);
+}
+
+.benz-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(49, 132, 155, 1);
+}
+
 .percent-text {
   font-size: 1rem;
-  color: #ffffff;
+  color: #333;
 }
-.animal-label {
-    width: 20%;
-    text-align: left;
-    height: 2rem;
+
+.carbrand-label {
+   width: 20%;
+   text-align: left;
+   height: 1.5rem;
 }
+
 #label-container {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
+
 .result-message {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
+.carbrand-explain {
+	font-size: 1.5rem;
+}
 
-.car-explain {
-    font-size: 1.5rem;
+.randrover-carbrand-title {
+	color: #3ba363;
 }
-.maserati-carbrand-title {
-    color: #3ba363;
+
+.randrover-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
 }
-.maserati-carbrand-celeb {
-    color: #3ba363;
-    font-size: 1.2rem;
-}
-.kia-carbrand-title {
-    color: #3ba363;
-}
-.kia-carbrand-celeb {
-    color: #3ba363;
-    font-size: 1.2rem;
-}
-.ssangyoung-carbrand-title {
-    color: #ff6c0a;
-}
-.ssangyoung-carbrand-celeb {
-    color: #ff6c0a;
-    font-size: 1.2rem;
-}
+
 .lexus-carbrand-title {
-    color: #548dd4;
+	color: #3ba363;
 }
+
 .lexus-carbrand-celeb {
-    color: #548dd4;
-    font-size: 1.2rem;
+	color: #3ba363;
+    font-size: 1rem;
 }
-.bmw-carbrand-title {
-    color: #e56995;
+
+.mini-carbrand-title {
+	color: #ff6c0a;
 }
-.bmw-carbrand-celeb {
-    color: #e56995;
-    font-size: 1.2rem;
+
+.mini-carbrand-celeb {
+	color: #ff6c0a;
+    font-size: 1rem;
 }
-.volks-carbrand-title {
-    color: #9b6b43;
+
+.genesis-carbrand-title {
+	color: #548dd4;
 }
-.volks-carbrand-celeb {
-    color: #9b6b43;
-    font-size: 1.2rem;
+
+.genesis-carbrand-celeb {
+	color: #548dd4;
+    font-size: 1rem;
 }
+
+.kia-carbrand-title {
+	color: #e56995;
+}
+
+.kia-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
 .audi-carbrand-title {
-    color: #31849b;
+	color: #e56995;
 }
+
 .audi-carbrand-celeb {
-    color: #31849b;
-    font-size: 1.2rem;
+	color: #e56995;
+    font-size: 1rem;
 }
-.apologize{
-box-sizing: border-box;
-margin: 0;
-border: 0;
-font: inherit;
-vertical-align: baseline;
-width: 320px;
-margin-top: 40px;
-background-color: #fbfbf1;
-border-radius: 20px;
-padding: 20px;
-font-size: 14px;
-line-height: 19px;
-font-style: italic;
-color: rgb(93, 93, 93);
+
+.kia-carbrand-title {
+	color: #e56995;
+}
+
+.kia-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+.benz-carbrand-title {
+	color: #e56995;
+}
+
+.benz-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+
+/* carbrand */
+input#gender {
+	display: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #7edef7 inset;
+  border-radius: 30px;
+  position: relative;
+}
+
+.knob {
+  position: absolute;
+  width: 41px;
+  top: 0;
+  left: 0;
+  height: 41px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #90f8de inset;
+  background-color: #e2fcca;
+  transition: 0.3s;
+}
+
+
+
+.knob > i:before {
+  left: 4px;
+}
+.knob > i:after {
+  left: -6px;
+}
+
+input:checked + label > .knob {
+  box-shadow: 0 0 0 8px #0011ff inset;
+  background-color: #b8c2f7;
+  transform: translateX(49px) rotate(-140deg);
+}
+
+input:checked + label > .knob > i {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after,
+input:checked + label > .knob > i:before {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after {
+  top: 14.5px;
+  width: 12px;
+  left: -7px;
+  transform: rotate(45deg);
+}
+input:checked + label > .knob > i:before {
+  top: 13px;
+  width: 12px;
+  left: 0px;
+  transform: rotate(134deg);
+}
+
+.ad-banner {
+    width: 320px;
+    margin: 0 auto;
 }
