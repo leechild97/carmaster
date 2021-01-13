@@ -743,6 +743,68 @@ body {
     font-size: 1rem;
 }
 
+.lamboreghni-carbrand-title {
+	color: #3ba363;
+}
+
+.lamboreghni-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
+}
+
+.ferrari-carbrand-title {
+	color: #3ba363;
+}
+
+.ferrari-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
+}
+
+.pagani-carbrand-title {
+	color: #ff6c0a;
+}
+
+.pagani-carbrand-celeb {
+	color: #ff6c0a;
+    font-size: 1rem;
+}
+
+.bugatti-carbrand-title {
+	color: #548dd4;
+}
+
+.bugatti-carbrand-celeb {
+	color: #548dd4;
+    font-size: 1rem;
+}
+
+.mclaren-carbrand-title {
+	color: #e56995;
+}
+
+.mclaren-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+.poreche-carbrand-title {
+	color: #e56995;
+}
+
+.poreche-carbrand-celeb {
+	color: #e56995;
+    font-size: 1rem;
+}
+
+.koenigsegg-carbrand-title {
+	color: #3ba363;
+}
+
+.koenigsegg-carbrand-celeb {
+	color: #3ba363;
+    font-size: 1rem;
+}
 /* carbrand */
 input#gender {
 	display: none;
