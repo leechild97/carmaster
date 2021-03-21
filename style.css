@@ -584,7 +584,7 @@ body {
   background-color: rgba(117, 204, 84, 1);
 }
 
-.koenigsegg-box {
+.coenigsegg-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -594,7 +594,7 @@ body {
   background-color: rgba(195, 140, 102, 0.2);
 }
 
-.Koenigsegg-bar {
+.coenigsegg-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -797,11 +797,11 @@ body {
     font-size: 1rem;
 }
 
-.koenigsegg-carbrand-title {
+.coenigsegg-carbrand-title {
 	color: #3ba363;
 }
 
-.koenigsegg-carbrand-celeb {
+.coenigsegg-carbrand-celeb {
 	color: #3ba363;
     font-size: 1rem;
 }
