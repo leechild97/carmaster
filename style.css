@@ -203,7 +203,7 @@ body {
   height: 2.7rem;
 }
 
-.randrover-box {
+.rover-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -213,13 +213,13 @@ body {
   background-color: rgba(117, 204, 84, 0.2);
 }
 
-.randrover-bar {
+.rover-bar {
   position: absolute;
   top: 0;
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color:#6666cc;
+  background-color:rgba(49, 132, 155, 0.2);
 }
 
 .maserati-box {
@@ -626,11 +626,11 @@ body {
 	font-size: 1.5rem;
 }
 
-.randrover-carbrand-title {
+.rover-carbrand-title {
 	color: #3ba363;
 }
 
-.randrover-carbrand-celeb {
+.rover-carbrand-celeb {
 	color: #3ba363;
     font-size: 1rem;
 }
