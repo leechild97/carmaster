@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff" />
+      <stop offset="48%" stop-color="#eaf1ff" />
+      <stop offset="100%" stop-color="#e4ecff" />
+    </linearGradient>
+    <linearGradient id="roadGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6bff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#5de0ff" stop-opacity="0.08" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f8ff" />
+      <stop offset="100%" stop-color="#dbe4fa" />
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.4 0" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)" />
+
+  <g opacity="0.18" fill="none" stroke="#b7c9ef" stroke-width="1.5">
+    <path d="M-40 730 C270 680 470 645 680 660 C910 676 1080 700 1670 635" />
+    <path d="M-40 765 C260 730 470 700 700 720 C950 738 1150 760 1670 700" />
+    <path d="M-40 803 C250 770 500 780 760 760 C990 744 1200 770 1670 748" />
+  </g>
+
+  <g opacity="0.17" fill="none" stroke="url(#roadGlow)" stroke-width="18" stroke-linecap="round">
+    <path d="M-60 845 L1660 845" />
+    <path d="M-60 810 L1660 810" />
+  </g>
+
+  <g fill="none" stroke="#c9d8ff" stroke-width="1.8" opacity="0.44">
+    <path d="M120 840 L350 835" />
+    <path d="M420 842 L680 838" />
+    <path d="M780 850 L1020 844" />
+    <path d="M1130 843 L1375 838" />
+    <path d="M1500 838 L1660 836" />
+  </g>
+
+  <g transform="translate(200 470)">
+    <g transform="translate(0 0)" opacity="0.55">
+      <path d="M0 220 L60 140 L170 118 L330 118 L430 188 L520 188 L560 220 L560 300 L18 300 Z" fill="url(#metal)" />
+      <path d="M50 140 L160 118 L210 136" stroke="#5a6d95" stroke-width="3" stroke-linecap="round" />
+      <rect x="82" y="186" width="74" height="32" rx="16" fill="#1e293b" />
+      <rect x="246" y="170" width="68" height="35" rx="16" fill="#0f172a" />
+      <path d="M110 280 h80 m0 0 a18 18 0 1 0 36 0 h78" stroke="#0f172a" stroke-width="16" stroke-linecap="round" fill="none" />
+      <circle cx="188" cy="280" r="14" fill="#0f172a" />
+      <circle cx="338" cy="280" r="14" fill="#0f172a" />
+      <path d="M560 230 H575" stroke="#2f6df6" stroke-width="2" opacity="0.55" />
+      <path d="M530 250 h30" stroke="#2f6df6" stroke-width="2" opacity="0.55" />
+    </g>
+  </g>
+
+  <g transform="translate(1100 380)" opacity="0.45">
+    <path d="M0 252 L70 168 L190 152 L320 154 L420 244 L500 244 L550 252 L550 340 L15 340 Z" fill="url(#metal)" />
+    <path d="M72 168 L170 152 L217 162" stroke="#5a6d95" stroke-width="3" stroke-linecap="round" />
+    <path d="M90 280 h75 a17 17 0 1 0 34 0 h78" stroke="#0f172a" stroke-width="16" stroke-linecap="round" fill="none" />
+    <circle cx="180" cy="280" r="14" fill="#0f172a" />
+    <circle cx="315" cy="280" r="14" fill="#0f172a" />
+    <path d="M500 276 H518" stroke="#2f6df6" stroke-width="2" opacity="0.55" />
+    <path d="M470 297 h34" stroke="#2f6df6" stroke-width="2" opacity="0.55" />
+  </g>
+
+  <g transform="translate(620 275)">
+    <circle cx="0" cy="0" r="36" fill="#4f83ff" opacity="0.12" />
+    <circle cx="390" cy="35" r="46" fill="#4f83ff" opacity="0.13" />
+    <circle cx="190" cy="120" r="58" fill="#4f83ff" opacity="0.16" />
+  </g>
+
+  <g transform="translate(260 290)" fill="none" stroke="#4f83ff" stroke-opacity="0.26" stroke-width="2">
+    <path d="M0 420 C100 300 300 300 380 420" />
+    <path d="M380 420 C470 305 650 305 740 420" />
+    <path d="M740 420 C810 300 980 300 1060 420" />
+  </g>
+
+  <g opacity="0.34" fill="none" stroke="url(#roadGlow)" stroke-width="9" stroke-linecap="round">
+    <path d="M40 780 C120 742 240 742 310 780" />
+    <path d="M350 804 C435 760 560 760 635 804" />
+    <path d="M680 820 C770 780 900 780 980 820" />
+    <path d="M1020 804 C1120 758 1240 760 1305 804" />
+  </g>
+
+  <g transform="translate(520 118)" opacity="0.14" fill="#ffffff">
+    <circle cx="160" cy="120" r="72" />
+    <circle cx="780" cy="200" r="58" />
+    <circle cx="430" cy="55" r="33" />
+    <circle cx="1060" cy="112" r="46" />
+  </g>
+
+  <g transform="translate(560 540)" fill="none" stroke="#2f6df6" stroke-width="2.2" opacity="0.4">
+    <path d="M0 0 l68 -148 l74 148" />
+    <path d="M236 0 l57 -120 l51 120" />
+    <path d="M492 0 l61 -118 l48 118" />
+  </g>
+
+  <g transform="translate(0 0)" fill="none" stroke="#1d4ed8" stroke-width="1.7" opacity="0.24">
+    <rect x="340" y="86" width="220" height="98" rx="20" />
+    <rect x="1020" y="136" width="220" height="90" rx="18" />
+    <rect x="760" y="180" width="130" height="60" rx="12" />
+  </g>
+</svg>

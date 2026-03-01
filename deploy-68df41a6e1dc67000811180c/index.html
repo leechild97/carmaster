@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>나의 차량얼굴은? 나의 이미지로 차량 라인업 찾기</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1176513581848897" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="naver-site-verification" content="aa1f95d40b6de4eeb854ec0b112101bc28f41991" />
+  <meta name="description" content="이미지로 보는 차량 라인업 테스트. 슈퍼·하이퍼카 신차와 국산/수입 신형차 라인업을 실시간으로 비교합니다." />
+  <meta name="title" content="나의 차량얼굴은?" />
+  <meta name="subject" content="얼굴형 라인업 매칭형 테스트" />
+  <meta name="author" content="signalbuild" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="나의 차량얼굴은?" />
+  <meta
+    property="og:description"
+    content="업로드한 얼굴 이미지와 어울리는 차량을 라인업 단위로 추천합니다."
+  />
+  <meta property="og:image" content="https://mycarbrandface.netlify.app/master.png" />
+  <meta property="og:url" content="https://mycarbrandface.netlify.app" />
+  <meta name="google-adsense-account" content="ca-pub-3364399587102577" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="farvicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <script data-ad-client="ca-pub-1176513581848897" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://mycarbrandface.cf" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1WDV6FRQT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-J1WDV6FRQT');
+</script>
+<body>
+  <div id="brand-body-logo" class="brand-body-logo" aria-hidden="true">
+    <img id="brand-body-logo-image" class="brand-body-logo-image" alt="" />
+  </div>
+  <div class="vehicle-page">
+    <header class="hero-top container scroll-reveal reveal-delay-1">
+      <a class="brand" href="https://mycarbrandface.netlify.app/">나의 차량얼굴은?</a>
+      <nav class="top-links">
+        <a class="top-link" href="#upload">이미지 테스트</a>
+        <a class="top-link" id="instagram" href="https://instagram.com/signal_build?r=nametag">시그널빌드</a>
+      </nav>
+      <div class="theme-toggle-wrap">
+        <span class="theme-toggle-text">나이트 모드</span>
+        <input class="theme-toggle-input" type="checkbox" id="night-mode-toggle" />
+        <label for="night-mode-toggle" class="theme-toggle-track" role="switch" aria-label="나이트 모드 전환">
+          <span class="theme-switch-knob"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main-shell container">
+      <section class="hero-copy" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="title">나의 차량얼굴은?</h1>
+        <p class="subtitle">업로드 한 장, AI가 제안하는 차량 라인업</p>
+        <p class="copy-body">
+          브랜드명 나열이 아니라, 실차 라인업으로 추천합니다. 왼쪽은 슈퍼·하이퍼카, 오른쪽은 국산/수입 신형차 라인업으로
+          즉시 전환해 비교해 보세요. 얼굴 인상 톤(강도, 안정감, 움직임, 몰입도)에 맞춰 왜 어울리는지까지 알려드립니다.
+        </p>
+      </section>
+
+      <section class="youtube-block card-shadow d-flex align-items-center scroll-reveal reveal-delay-1" id="youtube-mid-link">
+        <img src="img/youtube_icon-icons.com_62716.ico" alt="youtube-icon" class="youtube-icon" />
+        <a href="https://www.youtube.com/@autoseasoning" class="youtube-link">오토시즈닝 유튜브 채널</a>
+      </section>
+
+      <section class="mode-card card-shadow scroll-reveal reveal-delay-2">
+        <p class="mode-title scroll-reveal reveal-delay-1">AI 비교 모드</p>
+      <div class="mode-switch-wrap scroll-reveal reveal-delay-2">
+          <span id="mode-left-caption" class="mode-caption is-active">슈퍼·하이퍼카 신차 라인업</span>
+          <div class="mode-switch-group">
+            <input type="checkbox" id="lineup-toggle" />
+            <label for="lineup-toggle" class="mode-switch-track" role="switch" aria-label="차량 라인업 변경 토글">
+              <span class="mode-switch-knob"></span>
+            </label>
+          </div>
+          <span id="mode-right-caption" class="mode-caption">국산·수입 신형차 라인업</span>
+        </div>
+        <p class="mode-status scroll-reveal reveal-delay-3" id="mode-status" aria-live="polite">현재 모드: 슈퍼·하이퍼카 신차 라인업</p>
+      </section>
+
+      <section id="upload" class="scroll-reveal reveal-delay-2">
+        <div id="result-headline-banner" class="section-flag result-headline-banner d-flex justify-content-center scroll-reveal reveal-delay-1">
+              <img id="result-headline-logo" class="result-headline-logo" alt="브랜드 로고" aria-hidden="true" />
+              <span id="result-headline-text" class="result-headline-text"></span>
+            </div>
+        <div class="file-upload card-shadow scroll-reveal reveal-delay-2">
+          <div class="image-upload-wrap scroll-reveal reveal-delay-3">
+            <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+              <h3 class="mt-5 pb-4 pt-4 upload-text">이곳을 눌러 얼굴 사진을 업로드하세요</h3>
+              <p class="noti">사진은 어디에도 저장되지 않습니다.</p>
+            </div>
+          </div>
+
+            <div class="file-upload-content scroll-reveal">
+              <div class="result-image-wrap scroll-reveal reveal-delay-1">
+                <img class="file-upload-image" id="face-image" alt="업로드 이미지" />
+              </div>
+              <div id="loading" class="animated bounce">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <p class="text-center mt-2">이미지를 분석 중입니다. 잠시만 기다려 주세요.</p>
+            </div>
+            <p class="result-message scroll-reveal reveal-delay-2"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around scroll-reveal reveal-delay-3"></div>
+
+            <div id="addThis" class="addthis_inline_share_toolbox_tylc"></div>
+            <div id="addhis" class="addthis_inline_share_toolbox"></div>
+
+            <div class="pt-3 image-title-wrap scroll-reveal reveal-delay-4">
+              <button type="button" class="try-again-btn" onclick="removeUpload();">
+                <span class="try-again-text">다른 사진으로 재시도</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ad-slot scroll-reveal reveal-delay-2" aria-hidden="true">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1176513581848897" crossorigin="anonymous"></script>
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-LGZkT69pQVVGGMlw" data-ad-width="320" data-ad-height="100"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+        <div class="text-center pt-3">
+          <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-8jKSahNBcjzrlot1" data-ad-width="320" data-ad-height="100"></ins>
+        </div>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </section>
+    </main>
+
+    <footer class="footer pt-5 container d-flex justify-content-center scroll-reveal reveal-delay-1">
+      <p>&copy; 시그널빌드 signalbuild 2023. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <script>
+    const FACE_DETECT_OPTIONS = {
+      fastMode: true,
+      maxDetectedFaces: 1,
+    };
+    const FACE_FALLBACK_SCRIPT_URL = 'https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js';
+    const FACE_FALLBACK_MODEL_URL = 'https://raw.githubusercontent.com/justadudewhohacks/face-api.js/master/weights';
+    const FACE_FALLBACK_THRESHOLD = 0.5;
+
+    const DEFAULT_UPLOAD_NOTICE = '사진은 어디에도 저장되지 않습니다.';
+    const NO_FACE_MESSAGE = '사람 얼굴이 인식되지 않았습니다. 얼굴이 정면으로 잘 보이는 사진으로 다시 시도해주세요.';
+    const FACE_API_UNSUPPORTED_MESSAGE = '현재 브라우저에서 얼굴 API를 지원하지 않습니다. 최신 Chrome/Edge에서 다시 시도해 주세요.';
+    const FACE_API_ERROR_MESSAGE = '얼굴 판별 중 오류가 발생했습니다. 다른 사진으로 재시도해 주세요.';
+    const NIGHT_MODE_STORAGE_KEY = 'mycar-night-mode-v1';
+    let faceFallbackLoadPromise = null;
+    let isFaceFallbackReady = false;
+    const MAX_PREDICTION_PIXELS = 640 * 640;
+
+    function getSavedNightMode() {
+      try {
+        const storedValue = localStorage.getItem(NIGHT_MODE_STORAGE_KEY);
+        if (storedValue === '1' || storedValue === '0') {
+          return storedValue === '1';
+        }
+      } catch (error) {
+        return null;
+      }
+      return null;
+    }
+
+    function saveNightMode(value) {
+      try {
+        localStorage.setItem(NIGHT_MODE_STORAGE_KEY, value ? '1' : '0');
+      } catch (error) {
+        return;
+      }
+    }
+
+    function applyNightMode(isNightMode) {
+      const themeToggle = document.getElementById('night-mode-toggle');
+      document.body.classList.toggle('night-mode', isNightMode);
+      if (themeToggle) {
+        themeToggle.checked = isNightMode;
+      }
+      saveNightMode(isNightMode);
+    }
+
+    function initNightModeToggle() {
+      const themeToggle = document.getElementById('night-mode-toggle');
+      if (!themeToggle) {
+        return;
+      }
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const saved = getSavedNightMode();
+      const initial = saved === null ? prefersDark : saved;
+      applyNightMode(initial);
+
+      themeToggle.addEventListener('change', function () {
+        applyNightMode(this.checked);
+      });
+
+      const mediaQuery = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+      if (!mediaQuery) {
+        return;
+      }
+      const handleSystemTheme = function (event) {
+        if (getSavedNightMode() === null) {
+          applyNightMode(event.matches);
+        }
+      };
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', handleSystemTheme);
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(handleSystemTheme);
+      }
+    }
+
+    function setUploadNotice(message, isError = false) {
+      const uploadNotice = document.querySelector('.image-upload-wrap .noti');
+      if (uploadNotice) {
+        uploadNotice.textContent = message || DEFAULT_UPLOAD_NOTICE;
+        uploadNotice.classList.toggle('notice-error', !!isError);
+      }
+    }
+
+    function clearUploadNotice() {
+      setUploadNotice(DEFAULT_UPLOAD_NOTICE, false);
+    }
+
+    function loadExternalScript(src) {
+      if (!src) {
+        return Promise.reject(new Error('스크립트 URL이 없습니다.'));
+      }
+      return new Promise((resolve, reject) => {
+        const existingScript = document.querySelector(`script[data-face-fallback="${src}"]`);
+        if (existingScript) {
+          if (existingScript.dataset.error === '1') {
+            reject(new Error('face-api.js 로드 실패'));
+            return;
+          }
+          if (existingScript.dataset.ready === '1') {
+            resolve();
+            return;
+          }
+          existingScript.addEventListener('load', () => resolve());
+          existingScript.addEventListener('error', () => {
+            existingScript.dataset.error = '1';
+            reject(new Error('face-api.js 로드 실패'));
+          });
+          return;
+        }
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.dataset.faceFallback = src;
+        script.addEventListener('load', () => {
+          script.dataset.ready = '1';
+          resolve();
+        });
+        script.addEventListener('error', () => {
+          script.dataset.error = '1';
+          reject(new Error('face-api.js 로드 실패'));
+        });
+        document.head.appendChild(script);
+      });
+    }
+
+    async function ensureFaceDetectorFallback() {
+      if (isFaceFallbackReady && window.faceapi && window.faceapi.nets && window.faceapi.nets.tinyFaceDetector) {
+        return true;
+      }
+      if (faceFallbackLoadPromise) {
+        return faceFallbackLoadPromise;
+      }
+      faceFallbackLoadPromise = (async () => {
+        await loadExternalScript(FACE_FALLBACK_SCRIPT_URL);
+        if (!window.faceapi || !window.faceapi.nets || !window.faceapi.nets.tinyFaceDetector) {
+          throw new Error('face-api를 초기화할 수 없습니다.');
+        }
+        if (typeof window.faceapi.nets.tinyFaceDetector.isLoaded !== 'function' || !window.faceapi.nets.tinyFaceDetector.isLoaded()) {
+          await window.faceapi.nets.tinyFaceDetector.loadFromUri(FACE_FALLBACK_MODEL_URL);
+        }
+        isFaceFallbackReady = true;
+        return true;
+      })();
+      try {
+        return await faceFallbackLoadPromise;
+      } catch (error) {
+        faceFallbackLoadPromise = null;
+        isFaceFallbackReady = false;
+        throw error;
+      }
+    }
+
+    async function verifyPersonImageWithFallback(imageElement) {
+      try {
+        await ensureFaceDetectorFallback();
+      } catch {
+        return {
+          ok: false,
+          reason: 'unsupported',
+        };
+      }
+      try {
+        const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: FACE_FALLBACK_THRESHOLD });
+        const detections = await faceapi.detectAllFaces(imageElement, options);
+        return {
+          ok: Array.isArray(detections) && detections.length > 0,
+          reason: Array.isArray(detections) && detections.length > 0 ? 'ok' : 'noFace',
+        };
+      } catch {
+        return {
+          ok: false,
+          reason: 'faceApiError',
+        };
+      }
+    }
+
+    function waitForImageReady(imageElement) {
+      return new Promise((resolve, reject) => {
+        if (!imageElement) {
+          reject(new Error('이미지 엘리먼트가 없습니다.'));
+          return;
+        }
+        if (imageElement.complete && imageElement.naturalWidth > 0) {
+          resolve();
+          return;
+        }
+        const handleLoad = () => {
+          imageElement.removeEventListener('load', handleLoad);
+          imageElement.removeEventListener('error', handleError);
+          resolve();
+        };
+        const handleError = () => {
+          imageElement.removeEventListener('load', handleLoad);
+          imageElement.removeEventListener('error', handleError);
+          reject(new Error('이미지를 불러오지 못했습니다.'));
+        };
+        imageElement.addEventListener('load', handleLoad);
+        imageElement.addEventListener('error', handleError);
+      });
+    }
+
+    async function verifyPersonImage(imageElement) {
+      await waitForImageReady(imageElement);
+
+      if ('FaceDetector' in window) {
+        try {
+          const detector = new window.FaceDetector(FACE_DETECT_OPTIONS);
+          const faces = await detector.detect(imageElement);
+          return {
+            ok: Array.isArray(faces) && faces.length > 0,
+            reason: Array.isArray(faces) && faces.length > 0 ? 'ok' : 'noFace',
+          };
+        } catch {
+          // chrome 호환성을 위해 FaceDetector 실패 시 face-api.js로 보완
+        }
+      }
+
+      return verifyPersonImageWithFallback(imageElement);
+    }
+
+    function showUploadStateForRetry(message) {
+      $('#loading').hide();
+      $('#label-container').empty();
+      $('.result-message').empty();
+      setUploadNotice(message, true);
+      $('.file-upload-content').hide();
+      $('.image-upload-wrap').show();
+      resetBrandResultVisual();
+      const input = document.querySelector('.file-upload-input');
+      if (input) {
+        input.value = '';
+      }
+    }
+
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        resetBrandResultVisual();
+        $('.result-message').empty();
+        $('#label-container').empty();
+        clearUploadNotice();
+        const reader = new FileReader();
+        reader.onload = async function (e) {
+              $('.image-upload-wrap').hide();
+              $('#loading').show();
+              $('.file-upload-image').attr('src', e.target.result);
+              const faceImage = document.getElementById('face-image');
+              if (faceImage) {
+                faceImage.style.display = 'block';
+              }
+              $('.file-upload-content').show();
+              replayReveal(document.querySelector('.file-upload-content'));
+          try {
+            const faceCheck = await verifyPersonImage(faceImage);
+            if (!faceCheck.ok) {
+              if (faceCheck.reason === 'noFace') {
+                showUploadStateForRetry(NO_FACE_MESSAGE);
+              } else if (faceCheck.reason === 'unsupported') {
+                showUploadStateForRetry(FACE_API_UNSUPPORTED_MESSAGE);
+              } else {
+                showUploadStateForRetry(FACE_API_ERROR_MESSAGE);
+              }
+              return;
+            }
+            await init();
+            await predict();
+          } catch (error) {
+            console.error(error);
+            showUploadStateForRetry('모델 로딩에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+          } finally {
+            $('#loading').hide();
+          }
+        };
+        reader.readAsDataURL(input.files[0]);
+      } else {
+        removeUpload();
+      }
+    }
+
+    function removeUpload() {
+      $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+      $('.file-upload-content').hide();
+      $('.image-upload-wrap').show();
+      $('.result-message').empty();
+      $('#label-container').empty();
+      resetBrandResultVisual();
+      clearUploadNotice();
+      const resultContent = document.querySelector('.file-upload-content');
+      if (resultContent) {
+        resultContent.classList.remove('is-in-view');
+      }
+    }
+
+    $('.image-upload-wrap').on('dragover', function () {
+      $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').on('dragleave', function () {
+      $('.image-upload-wrap').removeClass('image-dropping');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script>
+    const MODE_LABELS = {
+      superHyper: '슈퍼·하이퍼카 신차 라인업',
+      newCars: '국산·수입 신형차 라인업',
+    };
+
+    const MODEL_URL = {
+      superHyper: 'https://teachablemachine.withgoogle.com/models/rKAK4WH3T/',
+      newCars: 'https://teachablemachine.withgoogle.com/models/ufx6zTsLV/',
+    };
+
+    const CAR_LINEUPS = {
+      superHyper: {
+        lamboreghni: {
+          label: '람보르기니',
+          tone: '#7b1fa2',
+          title: '도심의 스포트라이트를 가장 오래 붙잡는 타입',
+          match:
+            '당신의 얼굴/표정에서 보이는 과감한 자신감, 즉각적인 임팩트 추구, 그리고 “한 번 봤을 때 남는 존재감”이 강할 때 람보르기니 신차 라인업과 가장 빠르게 맞닿습니다.',
+          detail:
+            '람보르기니의 신규 라인업은 성능을 과시하면서도 일상에서의 시선을 정교하게 설계한 구성으로, 첫인상·포지셔닝·드라이빙 감성을 동시에 챙기고 싶을 때 잘 받쳐줍니다. 당신의 이미지를 “강한 한 방”으로 해석한다면 Revuelto 계열이나 최신 우라칸 계열이 특히 성격적으로 닮았습니다. 감정 기복이 크고 선택에서 과감한 쪽이라면 이쪽 추천 포인트가 더 선명해집니다.',
+          models: 'Revuelto, 우라칸 STO, 우라칸 스파이더, 아벤타도르,우루스',
+        },
+        ferrari: {
+          label: '페라리',
+          tone: '#2563eb',
+          title: '감정은 강하지만 계산 가능한 세밀함도 놓치고 싶지 않은 타입',
+          match:
+            '당신의 외형이 전달하는 것은 격정만이 아니라 “완성도 높은 조율”입니다. 강한 가속 감각과 정교한 드라이빙 감성이 한 번에 필요한 사람에게 페라리의 신형 라인업은 안정적인 선택입니다.',
+          detail:
+            '296 GT 계열은 레이싱의 날선 감정과 공학적 정합을 함께 갖춰, 과시보다 집중을 선호하는 사용자에게도 강하게 와 닿습니다. Purosangue는 대형차 성향의 편안한 지향점까지 가져가며, 단지 튀는 차가 아니라 일상에서 사용할 때의 “품격 있는 확장성”이 필요할 때 적합합니다. 즉, 고급 스포츠를 쓰고 싶지만 과도한 공격성은 싫은 경우 페라리 라인업이 균형점이 됩니다.',
+          models: '296 GTB, 296 GTS, 296 GT3, Purosangue',
+        },
+        pagani: {
+          label: '파가니',
+          tone: '#4c1d95',
+          title: '희소성, 공학, 예술성을 하나로 즐기는 타입',
+          match:
+            '당신의 외형이 “평범한 것을 넘어선 취향”을 보여줄 때 파가니 라인업은 정합성이 높습니다. 빠르게 소비하는 모델이 아니라, 오래 보고 또 보는 상징성을 원할 때 강점이 큽니다.',
+          detail:
+            '파가니는 감성적 과잉을 기계적 완성도와 합쳐서 설명할 수 있습니다. 일반적인 고속형 초점이 아니라, 라인, 구조, 소재 감각에서 느껴지는 집중력이 큰 편이라서, 취향 자체를 드러내는 데 적합합니다. 당신에게 맞는 포인트는 “한 번에 이해되지 않고 천천히 설명되는 고급감”입니다.',
+          models: 'Huayra R, 우니타리(갱신판), Imola GT',
+        },
+        mclaren: {
+          label: '맥라렌',
+          tone: '#0369a1',
+          title: '순간 반응성과 코스를 즐기는 드라이브 성향',
+          match:
+            '당신에게는 “운전의 참여감”이 중요합니다. 표정/이미지에서 활동성, 반응성, 민첩함을 선호한다면 맥라렌 라인업은 자연스럽게 이어집니다.',
+          detail:
+            '맥라렌은 고성능 이미지 속에서도 핸들링의 즉각적인 리턴을 중시합니다. 신형 계열은 엔진 반응과 코너링 피드백이 직관적이라 도심뿐 아니라 드라이브를 의식하는 날에 오히려 안정적인 만족도를 줍니다. 즉, 성능을 “보고 듣는 것”보다 “몸으로 느끼는” 성향이라면 적합성이 높습니다.',
+          models: 'Artura, 750S, P1, Senna GTR',
+        },
+        astonmartin: {
+          label: '에스턴마틴',
+          tone: '#0891b2',
+          title: '럭셔리한 무드 연출을 동시에 원하는 타입',
+          match:
+            '당신은 단순한 스피드보다 브랜드의 무드와 분위기를 함께 소비하는 성향이 강합니다. 즉시 드러나는 감각뿐 아니라 장면 연출까지 중요할 때 잘 맞습니다.',
+          detail:
+            'DB 시리즈는 고급스러운 선과 부드러운 곡면이 균형을 잡아 이미지적으로 과한 공격성은 줄이고, 오래 보는 순간을 만들게 합니다. 직장, 저녁, 주말 이벤트에서 “누군가는 알아보는 고급감”이 필요한 상황을 고려한 선택이라면 이 라인업이 잘 맞습니다. 이 타입은 가끔 성격보다 감성 메시지가 중요합니다.',
+          models: 'DB12, DBX, Vanquish, V12 Vantage',
+        },
+        bugatti: {
+          label: '부가티',
+          tone: '#0f766e',
+          title: '극단적 임팩트와 상징적 존재감을 동시에 원하는 타입',
+          match:
+            '당신의 얼굴에서 느껴지는 강한 결단력과 드문 결의가, 부가티의 극단적 엔지니어링과 잘 공명할 때가 많습니다. 실용성이 아니라 “경험 자체”를 소비하는 사용자에게 가까운 편입니다.',
+          detail:
+            '부가티는 고급 성능의 절대치를 보여주는 브랜드 특성상, 당신의 표현이 날카로운 순간에 가장 잘 맞습니다. 일상에서는 다소 비현실적으로 느껴질 수 있지만, 특별한 날의 “나만의 서명”이 필요할 때는 강한 만족을 줍니다. 이 라인업은 사용빈도보다 이벤트성·상징성이 핵심인 타입과 궁합이 좋습니다.',
+          models: 'Chiron Pur Sport, Bolide, Mistral, Divo',
+        },
+        rollsroyce: {
+          label: '롤스로이스',
+          tone: '#14532d',
+          title: '조용한 위엄, 정교한 감성, 장기적인 품격을 중시하는 타입',
+          match:
+            '당신의 표정이나 이미지에서 안정감·기품·상징성을 함께 전달하는 경향이 강할수록 롤스로이스 라인업과 높은 정합도를 가집니다. 속도를 외치기보다 존재감의 정밀함을 선호한다면 이 라인업이 잘 맞습니다.',
+          detail:
+            '롤스로이스는 과장된 스펙보다 “완성된 실존감”을 설계합니다. 세단은 고요한 동력 전달과 장인정신의 실내 밀도를 중심으로, SUV는 장거리에서도 편안한 이동 무드를 강화합니다. 감정이 급격히 표출되지 않고 깊은 안정감으로 남고 싶을 때, 그리고 행사·동행·비즈니스 모두에서 얼굴이 먼저 아니라 이미지의 무게가 먼저 전달되어야 할 때 특히 어울립니다.',
+          models: '팬텀, 고스트, 컬리넌, 스펙터',
+        },
+        poreche: {
+          label: '포르쉐',
+          tone: '#1d4ed8',
+          title: '드라이빙의 균형을 일상까지 가져오고 싶은 타입',
+          match:
+            '당신은 과하지 않은 강렬함과 일상에서의 완성도를 함께 추구합니다. 강도보다 균형이 우선일 때 포르쉐의 신형 라인업이 가장 부드럽게 맞습니다.',
+          detail:
+            '포르쉐는 고성능 성향의 정교함을 유지하면서도 사용성이 무너지지 않게 만든 편입니다. 911 계열에서 부드러운 제어감과 스포츠성을 유지하고, 전기 라인인 Taycan 계열은 최신 라이프스타일까지 포용합니다. 즉, 성능형이되 과하지 않아야 하는 당신의 감성에 최적입니다.',
+          models: '911 Turbo S, 911 GT3 RS, Taycan Turbo S, 카이엔 퍼스트 에디션',
+        },
+        coenigsegg: {
+          label: '코닉세그',
+          tone: '#7c3aed',
+          title: '기술적 파격을 즐기고 한계 돌파를 선호하는 타입',
+          match:
+            '당신은 일반적인 프리미엄보다 “차원이 다른 규칙”을 추구할 때가 있습니다. 평평한 기준보다 실험적 결정을 선호할수록 코닉세그의 특유의 하이테크 성향과 결이 맞습니다.',
+          detail:
+            '코닉세그 라인업은 실존적인 희소성, 가벼운 실루엣 설계, 전기·내연 하이브리드 조합을 중심으로 확장되는 형태라 “익숙함”보다 “독창성”을 중시하는 사용자에게 어울립니다. 단독 감각의 라인업을 원하는 분에게 적합합니다. 실사용성보다 브랜드의 철학이 더 선명한 편입니다.',
+          models: 'Jesko Absolute, Regera 2.0, Gemera',
+        },
+      },
+      newCars: {
+        rover: {
+          label: '랜드로버',
+          tone: '#15803d',
+          title: '넓은 시야와 모험을 동시에 원하는 타입',
+          match:
+            '당신은 안정감을 기반으로 한 활동성, 그리고 이동성 높은 생활형 파워를 선호합니다. 표정에서 보이는 “넓은 캔버스형” 성향은 랜드로버의 신형 라인업과 긴밀히 맞물립니다.',
+          detail:
+            '랜드로버는 단순 SUV 감성을 넘어 장거리 이동에서도 피로도가 적은 구조와 실내 여유를 갖추는 방향으로 신형 라인업이 정리돼 있습니다. 실내 공간, 시인성, 고속 안정성의 균형을 중시한다면 디펜더/디스커버리 계열이 잘 들어맞습니다. 즉, 당신의 이미지는 “주행으로 경험을 만들고 싶은 사람”일 가능성이 큽니다.',
+          models: '디펜더, 디스커버리 6세대, 랜드로버 Range Rover',
+        },
+        genesis: {
+          label: '제네시스',
+          tone: '#7c2d12',
+          title: '절제와 고급스러움을 동시에 추구하는 타입',
+          match:
+            '당신에게 중요한 건 단순한 화려함보다 균형입니다. 고급스럽지만 과열되지 않은 라인업을 선호한다면 제네시스가 안정적으로 대응합니다.',
+          detail:
+            '최신 제네시스는 외형만 아니라 마감 밀도와 정숙성, 주행 인터페이스까지 묶인 “세트의 품격”을 강화했습니다. 가족 동행, 주말 장거리, 고급 비즈니스 동선까지 모두 소화할 수 있는 다용도 성격이 강점입니다. 감정적으로는 안정적인 자신감과 품격을 함께 보여줘야 할 때 유리합니다.',
+          models: 'GV80, G90, G80, GV70, GV60',
+        },
+        mini: {
+          label: '미니',
+          tone: '#e11d48',
+          title: '재미있고 또렷한 도시형 에너지가 강한 타입',
+          match:
+            '당신은 날렵함과 가벼운 공격성을 좋아합니다. 시내 이동이 잦고 스포티한 터치를 선호한다면 미니 신형 라인업이 잘 맞습니다.',
+          detail:
+            '미니는 소형 플랫폼 특유의 감각적인 반응을 살리고도, 신형 라인업은 실용과 스타일을 함께 가져가도록 정돈돼 있습니다. 컨버터블, 5도어 계열 모두 도시 생활에서 “짧고 강한 만족감”을 제공합니다. 첫인상과 주행기쁨을 동시 확보하려는 성향이라면 유효도가 높습니다.',
+          models: 'MINI 쿠퍼 5도어, MINI 컨트리맨, MINI 컨버터블',
+        },
+        hyundai: {
+          label: '현대',
+          tone: '#1d4ed8',
+          title: '실용성·스마트 기능을 함께 챙기는 현실형 타입',
+          match:
+            '현실적인 효율과 사용 편의를 중요하게 보는 사람이면, 현대 신형 라인업은 균형감 있게 반응합니다. 당신의 이미지가 안정적으로 정돈되어 있다면 일치도가 높습니다.',
+          detail:
+            '현대는 최근 전동화, 첨단 연결성, 안전장치가 유기적으로 섞인 라인업으로 이동합니다. 아이오닉 및 넥쏘 계열은 전기/하이브리드 지향이 강해 비용 대비 효율 감각이 큰 사용성에서 유리합니다. 또한 펠리세이드형 동승성도 일상용으로 강한 힘이 있습니다.',
+          models: '아이오닉 9, 아이오닉 5, 넥쏘, 펠리세이드, 아슬란(신형)',
+        },
+        kia: {
+          label: '기아',
+          tone: '#9333ea',
+          title: '적극적인 선택 폭과 트렌드 감각을 함께 쓰는 타입',
+          match:
+            '다음 라인을 자주 바꿔도 되는 활력형 성향이라면 기아 신형 라인업이 잘 맞습니다. 신형 모델에 대한 관심도가 높을수록 공감도 상승합니다.',
+          detail:
+            '기아는 SUV·전동화 축에서 라인업 폭을 넓혀 스타일과 기능의 균형이 높습니다. EV9, EV6, K9 계열은 장거리·도심 모두에서 활용성을 가진 편이고, 스팅어/모하비는 감각적인 고성능 이미지를 확장합니다. 취향이 분절되지 않고 “다양한 상황에서 잘 쓰이는 차”를 원할 때 강점입니다.',
+          models: 'EV9, EV6, EV5, 스팅어, 모하비, K9',
+        },
+        ssangyoung: {
+          label: '쌍용',
+          tone: '#a16207',
+          labelFallback: '쌍용',
+          title: '비용 효율과 실용적 활용을 우선하는 타입',
+          match:
+            '실속형의 강점, 유지비와 구조적 활용성을 함께 본다면 쌍용 라인업이 자연스럽게 어울립니다. 꾸준함을 선호하는 분위기의 이미지를 전달할 때 좋은 선택입니다.',
+          detail:
+            '쌍용은 최근 라인업에서 SUV 중심의 활용도와 내부 구성비 개선이 뚜렷하게 커졌습니다. 단기 효율보다 장기 사용 환경을 보는 사용성에 적합하고, 실용 우선형 성향에 일관됩니다. 눈에 자극적인 포스보다 실속의 신뢰가 중요할 때 효율이 높아집니다.',
+          models: '토레스, 코란도 스포츠, 코란도 투리스모',
+        },
+        lexus: {
+          label: '렉서스',
+          tone: '#0f766e',
+          title: '조용한 자신감과 매끈한 완성도를 선호하는 타입',
+          match:
+            '목소리가 크지 않지만 정교한 존재감을 남기고 싶은 당신의 에너지에 렉서스 라인업의 정적 우아함이 맞습니다.',
+          detail:
+            '렉서스 신형 라인업은 정숙성, 마감 밀도, 승차 쾌적성을 하나로 묶는 방향으로 강화되었습니다. 장시간 주행에서도 피로가 적고, 주변 반응이 과장되지 않아서 실내·실외 인상을 안정적으로 컨트롤합니다. 즉, 당신의 이미지를 “무게감 있는 차분함”으로 구현하고 싶을 때 유효합니다.',
+          models: 'NX 450h+, RX, RX 500h, ES, LC',
+        },
+        bmw: {
+          label: 'BMW',
+          tone: '#0f172a',
+          title: '드라이빙 감각을 즐기되 정돈된 방향을 선호하는 타입',
+          match:
+            '당신은 반응성에 대한 기대치가 높지만, 매번 과하게 무모하길 원하지 않습니다. 이 경우 BMW 신형 라인업은 밸런스를 잡아주는 축이 됩니다.',
+          detail:
+            'BMW는 스포츠 플랫폼과 편의 중심 기능이 조합된 구조로, 감성적으로도 “드라이버 지향적” 메시지를 줍니다. 3시리즈, 전기 SUV, X시리즈 조합에서 주행과 생활성이 같이 커집니다. 이미지는 진입 장벽이 낮아지지 않으면서도 실용을 놓치지 않는 쪽으로 읽힐 때 상승합니다.',
+          models: 'i4, i7, 3시리즈, X5 M40i, X7, XM',
+        },
+        volks: {
+          label: '폭스바겐',
+          tone: '#334155',
+          title: '과장 없는 합리성과 견고한 편안함을 좋아하는 타입',
+          match:
+            '당신의 이미지가 안정적이면서도 과한 장식보다는 구조감 있는 실용성을 선호한다면 폭스바겐 신형 라인업이 맞습니다.',
+          detail:
+            '폭스바겐 라인업은 일상 운행에서 스트레스가 낮고, 차분한 사용감에서 장점이 큽니다. ID 계열의 전기 전환은 이동성에 유연성을 더해주고, 아테온/티구안 등은 장거리에도 편하게 맞춰집니다. 가성비형 고급의 균형을 보이고 싶을 때 유용합니다.',
+          models: 'ID.4, ID.7, 아테온, 티구안, 폴로',
+        },
+        audi: {
+          label: '아우디',
+          tone: '#4f46e5',
+          title: '기술 인터페이스와 고속 안정성을 함께 보는 타입',
+          match:
+            '당신은 차를 ‘기술적으로 정돈된 라이프스타일 오브젝트’로 보는 경향이 있습니다. 화면·운영 감각을 중요하게 여기는 라인업 성향이라면 아우디가 잘 맞습니다.',
+          detail:
+            '아우디 신형 라인업은 사용자 인터페이스와 주행 안정감의 결합이 강화돼, 무심한 움직임 속에서 효율을 만들 수 있습니다. 특히 장거리 주행 빈도가 높은 사용자에게는 정서적 긴장감이 낮아집니다. 당신이 찾는 건 단기 쇼핑감이 아니라, 장기적으로 적응이 쉬운 고급 인터페이스입니다.',
+          models: 'Q4 e-tron, A8L, RS6 Avant, RSQ8, A5',
+        },
+        chevrolet: {
+          label: '쉐보레',
+          tone: '#b91c1c',
+          title: '다재다능한 패밀리 성향과 활용성을 중시하는 타입',
+          match:
+            '당신에게는 “한 번에 여러 용도를 소화”하는 실생활 효율이 중요합니다. 쉐보레 신형 라인업은 그런 점에서 실사용형으로 안정적입니다.',
+          detail:
+            '트레일블레이저·카마로 계열은 성향의 폭을 넓혀주며, 말리부·카파처럼 구조적으로 익숙한 플랫폼이 장점입니다. 과장된 이미지보다 실사용 만족도가 높고 수리·이용성도 비교적 예측 가능합니다. 감각은 무난하지만 꾸준하게 쓰는 차를 원하는 분에게 효율적으로 맞습니다.',
+          models: '트레일블레이저 2025, 카마로, 말리부, 카파(신형)',
+        },
+        maserati: {
+          label: '마세라티',
+          tone: '#b45309',
+          title: '감성적인 고급미를 깔끔하게 보존하고 싶은 타입',
+          match:
+            '당신은 과장된 강함보다 클래식한 고급 이미지의 밀도를 선호합니다. 감정이 과도하게 과장되지 않은 우아한 라인업에서 편안함을 느낍니다.',
+          detail:
+            '마세라티는 정서적 디자인과 오너십의 부드러운 무게 중심을 유지합니다. MC20 계열의 스포티함과 그란투리스모 계열의 라인업 균형은 취향이 분명한 사용자에게 선호됩니다. “나는 과하지 않게 잘 보이고 싶다”는 조건이 맞는 경우 적합도가 높습니다.',
+          models: 'MC20, MC20 Cielo, 그란투리스모, 르반떼',
+        },
+        benz: {
+          label: '메르세데스',
+          tone: '#374151',
+          title: '완성도 높은 상징성과 권위를 함께 쓰는 타입',
+          match:
+            '당신의 이미지가 깔끔한 위계와 정돈된 권위를 담고 있다면 메르세데스 라인업이 안정적으로 반응합니다.',
+          detail:
+            '메르세데스는 프레임·마감·디지털 제어의 균형이 잘 갖춰진 상징형 브랜드입니다. E/S/EQS 축에서 고급감은 일상에서 과하게 과장되지 않고 유지되며, G급 계열은 존재감을 원하는 날의 완급 조절 역할도 합니다.',
+          models: 'E클래스, S클래스, EQS, GLC, G클래스',
+        },
+        cadillac: {
+          label: '캐딜락',
+          tone: '#0ea5e9',
+          title: '넓은 플랫폼과 존재감을 동시에 추구하는 타입',
+          match:
+            '당신은 크기와 존재감이 중요하고, 공간을 통한 자신감 표현을 놓치고 싶지 않은 성향이 있습니다.',
+          detail:
+            '캐딜락 신형 라인업은 볼륨과 스타일이 결합돼, 시각적 임팩트를 먼저 확보합니다. LYRIQ의 전기성, 에스컬레이드의 대형감이 서로 다른 사용 상황에서 강한 선택지가 됩니다. 즉, 차를 단순 이동수단이 아니라 “라이프 태그”로 쓰는 사용자에게 적합합니다.',
+          models: 'LYRIQ, 에스컬레이드, CT5-V, XT6',
+        },
+      },
+    };
+
+    const ALIAS_CLASSNAME = {
+      lamboreghni: 'lamboreghni',
+      lamborghini: 'lamboreghni',
+      '람보르기니': 'lamboreghni',
+      rollsroyce: 'rollsroyce',
+      rollsroice: 'rollsroyce',
+      '롤스로이스': 'rollsroyce',
+      rangrover: 'rover',
+      randrover: 'rover',
+      rangdoriver: 'rover',
+      landrover: 'rover',
+      rangerover: 'rover',
+      defender: 'rover',
+      discovery: 'rover',
+      '랜드로버': 'rover',
+      rover: 'rover',
+      range: 'rover',
+      hyundia: 'hyundai',
+      hyuindi: 'hyundai',
+      '현대자동차': 'hyundai',
+      '현대': 'hyundai',
+      genesis: 'genesis',
+      '제네시스': 'genesis',
+      porsche: 'poreche',
+      poreche: 'poreche',
+      '포르셰': 'poreche',
+      '포르쉐': 'poreche',
+      ferrari: 'ferrari',
+      '페라리': 'ferrari',
+      astonmartin: 'astonmartin',
+      aston: 'astonmartin',
+      '에스턴마틴': 'astonmartin',
+      cheverolet: 'chevrolet',
+      chevrolete: 'chevrolet',
+      '쉐보레': 'chevrolet',
+      coenigsegg: 'coenigsegg',
+      konigsegg: 'coenigsegg',
+      '코닉세그': 'coenigsegg',
+      benz: 'benz',
+      mercedes: 'benz',
+      '벤츠': 'benz',
+      '메르세데스': 'benz',
+      mberse: 'benz',
+      audi: 'audi',
+      audii: 'audi',
+      '아우디': 'audi',
+      '비엠더블유': 'bmw',
+      bmw: 'bmw',
+      '쌍용': 'ssangyoung',
+      ssangyong: 'ssangyoung',
+      ssangyoung: 'ssangyoung',
+      '쌍용자동차': 'ssangyoung',
+      volkswagen: 'volks',
+      '폭스바겐': 'volks',
+      chevrolet: 'chevrolet',
+      volks: 'volks',
+      kia: 'kia',
+      '기아': 'kia',
+      mini: 'mini',
+      '미니': 'mini',
+      lexus: 'lexus',
+      '렉서스': 'lexus',
+      audiq: 'audi',
+      maserati: 'maserati',
+      mc20: 'maserati',
+      '마세라티': 'maserati',
+      cadillac: 'cadillac',
+      '케이디': 'cadillac',
+      '캐딜락': 'cadillac',
+    };
+
+    const leftModeCaption = document.getElementById('mode-left-caption');
+    const rightModeCaption = document.getElementById('mode-right-caption');
+
+    let URL;
+    let model;
+    let labelContainer;
+    let maxPredictions;
+    let modeStatusTimer = null;
+    const modelCache = Object.create(null);
+    const modelLoadJobs = Object.create(null);
+    let cachedPredictionCanvas = null;
+    let cachedPredictionCanvasCtx = null;
+
+    function getOrCreatePredictionCanvas() {
+      if (!cachedPredictionCanvas) {
+        cachedPredictionCanvas = document.createElement('canvas');
+        cachedPredictionCanvas.width = 1;
+        cachedPredictionCanvas.height = 1;
+        cachedPredictionCanvasCtx = cachedPredictionCanvas.getContext('2d');
+      }
+      return cachedPredictionCanvas;
+    }
+
+    function buildPredictionInput(imageElement) {
+      if (!imageElement || !imageElement.naturalWidth || !imageElement.naturalHeight) {
+        return imageElement;
+      }
+      const totalPixels = imageElement.naturalWidth * imageElement.naturalHeight;
+      if (totalPixels <= MAX_PREDICTION_PIXELS) {
+        return imageElement;
+      }
+      const scale = Math.sqrt(MAX_PREDICTION_PIXELS / totalPixels);
+      const width = Math.max(1, Math.round(imageElement.naturalWidth * scale));
+      const height = Math.max(1, Math.round(imageElement.naturalHeight * scale));
+      const canvas = getOrCreatePredictionCanvas();
+      canvas.width = width;
+      canvas.height = height;
+      cachedPredictionCanvasCtx.drawImage(imageElement, 0, 0, width, height);
+      return canvas;
+    }
+
+    function replayReveal(target) {
+      if (!target) {
+        return;
+      }
+      target.classList.remove('is-in-view');
+      void target.offsetWidth;
+      target.classList.add('is-in-view');
+    }
+
+    function normalizeClassName(className) {
+      const key = (className || '').toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
+      return ALIAS_CLASSNAME[key] || key;
+    }
+
+    function normalizeDisplayName(className) {
+      return (className || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function normalizeHexColor(value, fallback = '#64748b') {
+      if (!value) {
+        return fallback;
+      }
+      const raw = String(value).trim().toLowerCase().replace('#', '');
+      if (/^[0-9a-f]{3}$/.test(raw)) {
+        return `#${raw[0]}${raw[0]}${raw[1]}${raw[1]}${raw[2]}${raw[2]}`;
+      }
+      if (/^[0-9a-f]{6}$/.test(raw)) {
+        return `#${raw}`;
+      }
+      return fallback;
+    }
+
+    function rgbaFromHex(value, alpha = 1) {
+      const hex = normalizeHexColor(value).replace('#', '');
+      const num = parseInt(hex, 16);
+      const r = (num >> 16) & 255;
+      const g = (num >> 8) & 255;
+      const b = num & 255;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function makeBrandMark(label) {
+      const clean = normalizeDisplayName(label || '').replace(/["'<>]/g, '');
+      const compact = clean.replace(/\s+/g, '');
+      if (!compact) {
+        return 'AUTO';
+      }
+      return compact.slice(0, 6).toUpperCase();
+    }
+
+    const BRAND_TEXT_MARKS = {
+      lamboreghni: 'LAMBORGHINI',
+      ferrari: 'FERRARI',
+      pagani: 'PAGANI',
+      mclaren: 'MCLAREN',
+      astonmartin: 'ASTON MARTIN',
+      bugatti: 'BUGATTI',
+      rollsroyce: '롤스로이스',
+      poreche: 'PORSCHE',
+      coenigsegg: 'KOENIGSEGG',
+      rover: '랜드로버',
+      genesis: 'GENESIS',
+      mini: 'MINI',
+      hyundai: 'HYUNDAI',
+      kia: 'KIA',
+      ssangyoung: 'SSANGYONG',
+      lexus: 'LEXUS',
+      bmw: 'BMW',
+      volks: 'VOLKSWAGEN',
+      audi: 'AUDI',
+      chevrolet: 'CHEVROLET',
+      maserati: 'MASERATI',
+      benz: 'MERCEDES',
+      cadillac: 'CADILLAC',
+    };
+
+    const BRAND_LOGO_SOURCE = {
+      lamboreghni: {
+        logo: 'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/logos/2024/03_26/logo_header_01.svg',
+      },
+      ferrari: {
+        domain: 'www.ferrari.com',
+      },
+      pagani: {
+        domain: 'www.pagani.com',
+      },
+      mclaren: {
+        logo: 'https://www.mclaren.com/_next/static/media/McLaren.f617bbc3.svg',
+      },
+      astonmartin: {
+        domain: 'www.astonmartin.com',
+      },
+      bugatti: {
+        domain: 'www.bugatti.com',
+      },
+      rollsroyce: {
+        domain: 'www.rolls-royce.com',
+      },
+      poreche: {
+        domain: 'www.porsche.com',
+      },
+      coenigsegg: {
+        domain: 'www.coenigsegg.com',
+      },
+      rover: {
+        domain: 'www.landrover.com',
+      },
+      genesis: {
+        domain: 'www.genesis.com',
+      },
+      mini: {
+        domain: 'www.mini.com',
+      },
+      hyundai: {
+        domain: 'www.hyundai.com',
+      },
+      kia: {
+        domain: 'www.kia.com',
+      },
+      ssangyoung: {
+        domain: 'www.ssangyong.com',
+      },
+      lexus: {
+        domain: 'www.lexus.com',
+      },
+      bmw: {
+        logo: 'https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-bmw-com-gray.svg',
+      },
+      volks: {
+        domain: 'www.volkswagen.com',
+      },
+      audi: {
+        domain: 'www.audi.com',
+      },
+      chevrolet: {
+        domain: 'www.chevrolet.com',
+      },
+      maserati: {
+        domain: 'www.maserati.com',
+      },
+      benz: {
+        domain: 'www.mercedes-benz.com',
+      },
+      cadillac: {
+        domain: 'www.cadillac.com',
+      },
+    };
+
+    function resolveBrandLogoImageUrl(label, brandKey) {
+      const key = normalizeClassName(brandKey || label);
+      const source = BRAND_LOGO_SOURCE[key];
+      if (!source) {
+        return '';
+      }
+      if (source.logo) {
+        return source.logo;
+      }
+      if (source.domain) {
+        const safeDomain = source.domain.replace(/^https?:\/\/|\/+$/g, '');
+        return `https://logo.clearbit.com/${safeDomain}`;
+      }
+      return '';
+    }
+
+    function applyLogoWithFallback(imgEl, primarySrc, fallbackSrc, onResolved) {
+      if (!imgEl) {
+        return;
+      }
+      if (imgEl.__logoLoadHandler) {
+        imgEl.removeEventListener('load', imgEl.__logoLoadHandler);
+        imgEl.__logoLoadHandler = null;
+      }
+      if (imgEl.__logoErrorHandler) {
+        imgEl.removeEventListener('error', imgEl.__logoErrorHandler);
+        imgEl.__logoErrorHandler = null;
+      }
+      if (!primarySrc && fallbackSrc) {
+        imgEl.src = fallbackSrc;
+        if (onResolved) {
+          onResolved(fallbackSrc);
+        }
+        return;
+      }
+      if (primarySrc === fallbackSrc || !fallbackSrc) {
+        imgEl.src = primarySrc;
+        if (onResolved) {
+          onResolved(primarySrc);
+        }
+        return;
+      }
+      const handleError = () => {
+        imgEl.removeEventListener('load', handleLoad);
+        imgEl.removeEventListener('error', handleError);
+        imgEl.src = fallbackSrc;
+        if (onResolved) {
+          onResolved(fallbackSrc);
+        }
+      };
+      const handleLoad = () => {
+        imgEl.removeEventListener('load', handleLoad);
+        imgEl.removeEventListener('error', handleError);
+        if (onResolved) {
+          onResolved(primarySrc);
+        }
+      };
+      imgEl.__logoLoadHandler = handleLoad;
+      imgEl.__logoErrorHandler = handleError;
+      imgEl.addEventListener('load', handleLoad);
+      imgEl.addEventListener('error', handleError);
+      imgEl.src = primarySrc;
+    }
+
+    function makeBrandLogoDataUrl(label, tone, brandKey) {
+      const key = normalizeClassName(brandKey || label);
+      const officialLogoUrl = resolveBrandLogoImageUrl(label, key);
+      const mark = BRAND_TEXT_MARKS[key] || makeBrandMark(label || key);
+      const safeMark = normalizeDisplayName(mark).replace(/["'<>]/g, '').replace(/&/g, '&amp;');
+      const brandTone = normalizeHexColor(tone, '#64748b');
+      const fontSize = Math.min(82, Math.max(34, 460 / Math.max(5, safeMark.length)));
+      const logoSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" fill="none">
+  <defs>
+    <linearGradient id="brand-logo-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${brandTone}" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="${brandTone}" stop-opacity="0.18" />
+    </linearGradient>
+  </defs>
+  <rect x="13" y="10" width="394" height="150" rx="80" stroke="${brandTone}" stroke-width="4" fill="url(#brand-logo-grad)" fill-opacity="0.34" />
+  <path d="M80 112L152 46L214 102L286 46L352 112" stroke="${brandTone}" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.28" />
+  <path d="M60 120L210 120" stroke="${brandTone}" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.27" />
+  <path d="M130 130L220 44L310 130" stroke="${brandTone}" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.27" />
+  <g opacity="0.82">
+    <text x="210" y="100" text-anchor="middle" dominant-baseline="middle" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="${fontSize}" font-weight="800" fill="${brandTone}">${safeMark}</text>
+  </g>
+</svg>`;
+
+      const fallbackLogoDataUrl = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(logoSvg)}`;
+
+      return {
+        src: officialLogoUrl || fallbackLogoDataUrl,
+        fallback: fallbackLogoDataUrl,
+      };
+    }
+
+    function resetBrandResultVisual() {
+      const content = document.querySelector('.file-upload-content');
+      const bodyLogo = document.getElementById('brand-body-logo');
+      const bodyLogoImage = document.getElementById('brand-body-logo-image');
+      const faceImage = document.getElementById('face-image');
+      const headlineBanner = document.getElementById('result-headline-banner');
+      const headlineLogo = document.getElementById('result-headline-logo');
+      const headlineText = document.getElementById('result-headline-text');
+      if (!content) {
+        if (bodyLogo) {
+          bodyLogo.style.backgroundImage = 'none';
+          bodyLogo.classList.remove('is-visible');
+        }
+        if (bodyLogoImage) {
+          bodyLogoImage.removeAttribute('src');
+        }
+        if (headlineBanner) {
+          headlineBanner.classList.remove('is-visible');
+          headlineBanner.style.removeProperty('--headline-tone');
+          headlineBanner.hidden = true;
+        }
+        if (headlineLogo) {
+          headlineLogo.removeAttribute('src');
+          headlineLogo.hidden = true;
+        }
+        if (headlineText) {
+          headlineText.textContent = '';
+          headlineText.style.color = '';
+        }
+        return;
+      }
+      content.style.removeProperty('--result-tone');
+      content.style.removeProperty('--result-tone-soft');
+      content.style.removeProperty('--result-tone-medium');
+      content.style.removeProperty('--result-tone-strong');
+      if (bodyLogo) {
+        bodyLogo.style.backgroundImage = 'none';
+        bodyLogo.classList.remove('is-visible');
+      }
+      if (bodyLogoImage) {
+        bodyLogoImage.removeAttribute('src');
+      }
+      if (headlineBanner) {
+        headlineBanner.classList.remove('is-visible');
+        headlineBanner.style.removeProperty('--headline-tone');
+        headlineBanner.hidden = true;
+      }
+      if (headlineLogo) {
+        headlineLogo.removeAttribute('src');
+        headlineLogo.hidden = true;
+      }
+      if (headlineText) {
+        headlineText.textContent = '';
+        headlineText.style.color = '';
+      }
+      if (faceImage) {
+        faceImage.style.display = 'none';
+        faceImage.removeAttribute('src');
+      }
+    }
+
+    function applyBrandResultVisual(meta, className) {
+      const tone = normalizeHexColor(meta && meta.tone, '#2563eb');
+      const content = document.querySelector('.file-upload-content');
+      const bodyLogo = document.getElementById('brand-body-logo');
+      const bodyLogoImage = document.getElementById('brand-body-logo-image');
+      const faceImage = document.getElementById('face-image');
+      const headlineBanner = document.getElementById('result-headline-banner');
+      const headlineLogo = document.getElementById('result-headline-logo');
+      const headlineText = document.getElementById('result-headline-text');
+      if (!content) {
+        return;
+      }
+      const label = normalizeDisplayName(meta && meta.label) || 'BRAND';
+      const brandKey = normalizeClassName((meta && meta.brandKey) || className || label);
+      const logoDataUrl = makeBrandLogoDataUrl(label, tone, brandKey);
+      const logoImageSrc = logoDataUrl.src;
+      const fallbackLogo = logoDataUrl.fallback;
+
+      content.style.setProperty('--result-tone', tone);
+      content.style.setProperty('--result-tone-soft', rgbaFromHex(tone, 0.14));
+      content.style.setProperty('--result-tone-medium', rgbaFromHex(tone, 0.23));
+      content.style.setProperty('--result-tone-strong', rgbaFromHex(tone, 0.5));
+      if (bodyLogoImage) {
+        applyLogoWithFallback(bodyLogoImage, logoImageSrc, fallbackLogo, (resolvedSrc) => {
+          if (bodyLogo) {
+            bodyLogo.style.backgroundImage = `url("${resolvedSrc}")`;
+          }
+        });
+      }
+      if (faceImage) {
+        faceImage.style.display = 'block';
+      }
+      if (headlineBanner) {
+        headlineBanner.hidden = false;
+        headlineBanner.style.setProperty('--headline-tone', tone);
+        headlineBanner.classList.remove('is-visible');
+        void headlineBanner.offsetWidth;
+        headlineBanner.classList.add('is-visible');
+      }
+      if (headlineLogo) {
+        headlineLogo.hidden = false;
+        applyLogoWithFallback(headlineLogo, logoImageSrc, fallbackLogo);
+      }
+      if (headlineText) {
+        headlineText.style.color = tone;
+        headlineText.textContent = label;
+      }
+      if (bodyLogo && !bodyLogoImage) {
+        bodyLogo.style.backgroundImage = `url("${logoImageSrc}")`;
+        bodyLogo.classList.add('is-visible');
+      }
+      if (bodyLogo) {
+        bodyLogo.classList.add('is-visible');
+      }
+    }
+
+    function getMode() {
+      return document.getElementById('lineup-toggle').checked ? 'newCars' : 'superHyper';
+    }
+
+    function activeDataset() {
+      return CAR_LINEUPS[getMode()];
+    }
+
+    function getModeLabelText() {
+      return getMode() === 'superHyper' ? MODE_LABELS.superHyper : MODE_LABELS.newCars;
+    }
+
+    function getModeHelpText() {
+      return '현재 모드: ' + getModeLabelText();
+    }
+
+    function syncModeState(animate = true) {
+      const status = document.getElementById('mode-status');
+      const isNewCars = getMode() === 'newCars';
+      const targetText = getModeHelpText();
+      const isAnimating = animate && status.textContent !== '';
+
+      leftModeCaption.classList.toggle('is-active', !isNewCars);
+      rightModeCaption.classList.toggle('is-active', isNewCars);
+
+      if (!isAnimating) {
+        status.textContent = targetText;
+        return;
+      }
+
+      status.classList.remove('mode-status-animate');
+      status.textContent = '';
+      // Force browser to restart animation.
+      void status.offsetWidth;
+      status.classList.add('mode-status-animate');
+      status.textContent = targetText;
+      if (modeStatusTimer) {
+        clearTimeout(modeStatusTimer);
+      }
+      modeStatusTimer = setTimeout(() => status.classList.remove('mode-status-animate'), 360);
+    }
+
+    function initScrollReplayAnimations() {
+      const elements = document.querySelectorAll('.hero-copy, .scroll-reveal');
+      if (!elements.length) {
+        return;
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach((element) => element.classList.add('is-in-view'));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in-view');
+            } else {
+              entry.target.classList.remove('is-in-view');
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -15% 0px',
+        }
+      );
+      elements.forEach((element) => observer.observe(element));
+    }
+
+    function getMissingMeta(className) {
+      const normalizedClass = normalizeClassName(className);
+      return {
+        brandKey: normalizedClass,
+        label: normalizeDisplayName(className) || '해당 라인업',
+        tone: '#64748b',
+        title: '현재 학습 모델 라인업과 정확히 일치하지 않습니다.',
+        match: '새로운 얼굴-차량 조합 데이터가 업데이트되면서 더 정밀한 추천이 가능합니다.',
+        detail:
+          '현재 클래스는 라인업 데이터와 문자열 정합이 완전히 맞지 않아 임시 추천을 보여줍니다. 그럼에도 상위 후보와의 구조적 유사도를 기반으로 가장 가까운 차량군 성향을 안내합니다.',
+        models: '대표 신형차 라인업 후보를 함께 확인해보세요',
+      };
+    }
+
+    async function loadModelForMode(mode) {
+      if (!mode || !MODEL_URL[mode]) {
+        throw new Error('지원되지 않는 라인업 모드입니다.');
+      }
+      if (modelCache[mode]?.model) {
+        return modelCache[mode];
+      }
+      if (modelLoadJobs[mode]) {
+        return modelLoadJobs[mode];
+      }
+
+      const loadPromise = (async () => {
+        const modelURL = MODEL_URL[mode] + 'model.json';
+        const metadataURL = MODEL_URL[mode] + 'metadata.json';
+        const loadedModel = await tmImage.load(modelURL, metadataURL);
+        const data = {
+          model: loadedModel,
+          maxPredictions: loadedModel.getTotalClasses(),
+        };
+        modelCache[mode] = data;
+        return data;
+      })();
+
+      modelLoadJobs[mode] = loadPromise;
+      try {
+        return await loadPromise;
+      } catch (error) {
+        modelLoadJobs[mode] = null;
+        throw error;
+      } finally {
+        if (modelCache[mode]) {
+          modelLoadJobs[mode] = null;
+        }
+      }
+    }
+
+    async function init() {
+      const mode = getMode();
+      URL = MODEL_URL[mode];
+      syncModeState(true);
+
+      const modelData = await loadModelForMode(mode);
+      model = modelData.model;
+      maxPredictions = modelData.maxPredictions;
+      labelContainer = document.getElementById('label-container');
+      if (labelContainer) {
+        if (labelContainer.childElementCount !== maxPredictions) {
+          labelContainer.innerHTML = '';
+          for (let i = 0; i < maxPredictions; i++) {
+            const row = document.createElement('div');
+            row.className = 'result-row';
+            labelContainer.appendChild(row);
+          }
+        }
+      }
+    }
+
+    function buildResultMarkup(data) {
+      return (
+        `<div class='result-main-title'>${data.title}</div>` +
+        `<p class='result-match'>${data.match}</p>` +
+        `<p class='result-detail'>${data.detail}</p>` +
+        `<p class='result-recommend'>추천 차량 라인업: <span class='result-point'>${data.label}</span> 신형차 중 <strong class='result-point'>${data.models}</strong></p>`
+      );
+    }
+
+    async function predict() {
+      const image = document.getElementById('face-image');
+      const predictionInput = buildPredictionInput(image);
+      const prediction = await model.predict(predictionInput, false);
+      prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+
+      const modeData = activeDataset();
+      const topClassName = normalizeClassName(prediction[0].className);
+      const topMeta = modeData[topClassName] || getMissingMeta(prediction[0].className);
+      applyBrandResultVisual(topMeta, topClassName);
+
+      const resultMarkup = buildResultMarkup(topMeta);
+      $('.result-message').html(resultMarkup);
+
+      for (let i = 0; i < maxPredictions; i++) {
+        const predicted = normalizeClassName(prediction[i].className);
+        const meta = modeData[predicted] || getMissingMeta(prediction[i].className);
+        const score = Number(prediction[i].probability);
+        const percent = Math.max(0, Math.min(100, Math.round(score * 1000) / 10));
+        const barWidth = percent > 6 ? `${percent}%` : percent > 1 ? '6%' : '2%';
+        const tone = normalizeHexColor(meta && meta.tone, '#64748b');
+        const label = `<div class='carbrand-label' style='color:${tone};'>${meta.label}</div>`;
+
+        const bar =
+          `<div class='bar-track'>` +
+          `<div class='bar-fill' style='width: ${barWidth}; background-color: ${meta.tone};'></div>` +
+          `<div class='percent-text'>${percent.toFixed(1)}%</div>` +
+          `</div>`;
+
+        labelContainer.childNodes[i].className = 'result-row';
+        labelContainer.childNodes[i].innerHTML = label + bar;
+      }
+
+      replayReveal(document.querySelector('.file-upload-content'));
+      replayReveal(document.querySelector('.result-image-wrap'));
+      replayReveal(document.querySelector('.result-message'));
+      replayReveal(document.querySelector('#label-container'));
+      replayReveal(document.querySelector('.image-title-wrap'));
+    }
+
+    $('#lineup-toggle').on('change', function () {
+      if ($('.file-upload-content').is(':visible')) {
+        removeUpload();
+      }
+      syncModeState(true);
+    });
+
+    resetBrandResultVisual();
+    syncModeState(false);
+    initNightModeToggle();
+    initScrollReplayAnimations();
+  </script>
+
+  <script>
+    function iosApp() {
+      document.getElementById('coupang')?.style && (document.getElementById('coupang').style.display = 'none');
+      $('#coupang ins').hide();
+      document.getElementById('addThis').style.display = 'none';
+      const disqus = document.getElementById('disqus_thread');
+      if (disqus) {
+        disqus.style.display = 'none';
+      }
+      var kakao = document.getElementsByClassName('kakao_ad_area');
+      for (var i = 0; i < kakao.length; i++) {
+        if (kakao[i]) {
+          kakao[i].style.display = 'none';
+        }
+      }
+      document.getElementById('instagram').style.display = 'none';
+      const youtubeSection = document.getElementById('youtube-mid-link');
+      if (youtubeSection) {
+        youtubeSection.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

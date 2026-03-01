@@ -1,0 +1,2 @@
+User-agent:*
+Allow:/Sitemap: https:https://mycarbrandface.netlify.app/sitemap.xml
